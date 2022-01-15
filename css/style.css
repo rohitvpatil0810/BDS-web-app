@@ -1,10 +1,12 @@
 *{
     margin: 0;
 }
+
 body {
     font-family: Montserrat;
     text-align: center;
   }
+
 .header{
     background-color: #40AA77;
     padding: 15px 7rem;
@@ -14,11 +16,8 @@ body {
     border-bottom: solid 5px #2E8D22;
 }
 
-
 .search-form{
-
    margin: auto;
-    
 }
 
 .search-form input[type=text]{
@@ -27,6 +26,7 @@ body {
     font-size: 1rem;
     font-family: sans-serif;
 }
+
 .search-btn{
     float: right;
     padding: 10px;
@@ -47,22 +47,19 @@ body {
     z-index: 9999;
     position: sticky;
     overflow: hidden;
-    
 }
-
 
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0 7rem;
-    display: flex;    
+    display: flex;
 }
 
 nav li{
     display: inline;
-    
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 nav a{
     text-decoration: none;
@@ -84,17 +81,16 @@ nav a:hover{
     background-color: #0F3D31;
 }
 
-
 /* Unsorted*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat-Bold', sans-serif;
   }
-  
+
   p {
     color: #afafaf;
   }
-  
+
   /* Headings */
   .Big-heading {
     font-family: 'Montserrat-Black', sans-serif;
@@ -102,14 +98,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
     font-weight: bold;
   }
-  
+
   .section-headings {
     font-size: 3rem;
     line-height: 1.5;
   }
-  
+
   /* sections */
-  
   .coloured-section{
    background-color: #577BC1;
    color: #fff;
@@ -118,28 +113,28 @@ h1, h2, h3, h4, h5, h6 {
    background-color: #fff;
      color: #000;
   }
-  
+
   /* navigation bar */
   .navbar {
     padding: 0 0 4.5rem;
   }
-  
+
   .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
   }
-  
+
   .nav-item {
     padding: 0 18px;
   }
-  
+
   .nav-link {
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
   }
-  
-  
+
+
   /* Login and sign up buttons */
   .download-button {
     margin: 5% 3% 5% 0;
@@ -148,8 +143,8 @@ h1, h2, h3, h4, h5, h6 {
   .container-fluid {
     padding: 7% 15%;
   }
-  
-  
+
+
   /* title image */
   #title .container-fluid {
     padding: 3% 15% 7%;
@@ -161,66 +156,96 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 30%;
   }
-  
+
   /* features */
   #features {
     position: relative;
   }
-  
+
   .feature-title {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .put {
     color: #ef8172;
     margin-bottom: 2rem;
   }
-  
+
   .put:hover {
     color: #ff4c68;
   }
-  
+
   .updates-text {
     font-size: 3rem;
     line-height: 1.5;
   }
-  
+
   .updates-image {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
   }
-  
+
   /* press */
   #press {
     padding-bottom: 3%;
   }
-  
+
   .press-logos {
     width: 14%;
     margin: 20px 20px 50px;
   }
-  
+
   /* pricing section */
   #Grid {
     padding: 100px;
   }
-  
-  
+
+
   .social-icon {
     margin: 20px 10px;
   }
-  
+
   /* Call to Action */
   @media (max-width:1020px) {
     .title-image {
       position: static;
       transform: rotate(0);
     }
-  
+
     #title {
       text-align: center;
     }
   }
-  
+
+    /* Footer */
+    #footer1{
+      background-color: #4CE6A8;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 5px #2E8D22;
+      padding: 2%;
+    }
+
+    .foot-bar{
+      background-color: #40AA77;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 5px #2E8D22;
+      padding-right: 4%;
+    }
+
+    .vl {
+      border-left: 4px solid green;
+      height: 160px;
+      margin: auto;
+    }
+
+.logo{
+  height: 8rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
