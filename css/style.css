@@ -225,8 +225,9 @@ p {
 }
 
 /*News and notifications*/
-#updates .container-fluid {
-  text-align: center;;
+#updates {
+  text-align: center;
+  padding: 2%;
 }
 
 /* press */
