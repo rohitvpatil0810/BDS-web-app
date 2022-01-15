@@ -1,3 +1,35 @@
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 10%;
+  max-width: 50px;
+}
+
+.image {
+  display: block;
+  width: 45%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(255, 252, 252);
+  background: rgba(53, 43, 43, 0.5); /* Black see-through */
+  color: #ffffff; 
+  width: 50%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size:30px;
+  padding: 20px;
+  text-align: right;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
 *{
     margin: 0;
 }
