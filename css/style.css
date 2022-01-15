@@ -1,5 +1,9 @@
 * {box-sizing: border-box;}
 
+.bds-logo{
+  height: 100%;
+}
+
 .container {
   position: relative;
   width: 50%;
