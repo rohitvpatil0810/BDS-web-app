@@ -66,26 +66,33 @@ body {
 }
 
 .header {
-  background-color: #40AA77;
+  background-color: #fff;
   padding: 15px 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 5px #2E8D22;
+  
 }
 
+.search{
+  height: 45px;
+}
 .search-form {
   margin: auto;
+  height: 100%;
 }
 
 .search-form input[type=text] {
   padding: 10px;
+  height: 100%;
   border: none;
   font-size: 1rem;
   font-family: sans-serif;
+  border: 2px solid #2E8C55;
 }
 
 .search-btn {
+  height: 100%;
   float: right;
   padding: 10px;
   background: #2E8C55;
@@ -100,11 +107,12 @@ body {
 .nav-bar {
   margin: 0;
   padding: 0;
-  background-color: #4CE6A8;
+  background-color: #005844;
   top: 0;
   z-index: 9999;
   position: sticky;
   overflow: hidden;
+  
 }
 
 nav ul {
@@ -139,6 +147,10 @@ nav a:hover {
   background-color: #0F3D31;
 }
 
+.foot-bar a{
+  text-decoration: none;
+  color: #fff;
+}
 /* Unsorted*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat-Bold', sans-serif;
@@ -154,6 +166,7 @@ p {
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: bold;
+
 }
 
 .section-headings {
@@ -163,7 +176,7 @@ p {
 
 /* sections */
 .coloured-section {
-  background-color: #577BC1;
+  background-color: #005844;
   color: #fff;
 }
 
@@ -229,7 +242,10 @@ p {
   text-align: center;
   padding: 2%;
 }
-
+.titles{
+  text-align: left;
+  border-bottom: 3px solid #005844 ;
+}
 /* press */
 #press {
   text-align: center;
@@ -264,29 +280,27 @@ p {
 
 /* Footer */
 #footer1 {
-  background-color: #4CE6A8;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 5px #2E8D22;
   padding: 2%;
 }
 
 .foot-bar {
-  background-color: #40AA77;
+  background-color: #003726;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 5px #2E8D22;
   padding-right: 4%;
 }
 
 div.vl {
-  border-left: 4px solid green;
+  border-left: 4px solid #003726;
   height: 160px;
   margin: auto;
 }
 
 @media screen and (max-width: 600px) {
-  div.v1 {
+  div.vl {
     display: none;
   }
 }

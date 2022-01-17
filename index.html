@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/masonry.css">
   <title>BDS</title>
   <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
@@ -21,13 +22,12 @@
 
 
 
-
 </head>
 
-<body>
+<body class="bg-light">
   <!-- Header Nav-Bar -->
-  <div class="header">
-    <img src="images/logo-bds-white.png" alt="bds-logo" class="bds-logo">
+  <div class="header bg-light">
+    <img src="images/logo-bds-black.png" alt="bds-logo" class="bds-logo">
     <div class="search">
       <form action="" class="search-form">
         <input type="text" name="" id="" placeholder="Search">
@@ -47,66 +47,92 @@
   </nav>
 
   <!--Body Start-->
-  <section class="coloured-section" id="title">
-    <div class="container-fluid">
-
-      <!-- Title -->
-
-      <div class="row">
-        <div class="col-sm-6">
-          <h1 class="Big-heading">BDS New Technology. Get updated by the Date.</h1>
-          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Login</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Sign up</button>
-        </div>
-        <div class="col-sm-6">
-          <img src="images/t1.jpg" alt="Avatar" width=100%>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- Picture Grid -->
 
-  <section class="white-section" id="Grid">
+<div class="bg-color-sky-light">
+  
+    <div class="content-md container">
+      <span class="titles">
+        <h2>Dive-in!</h2>
+      </span>
+        <!-- Masonry Grid -->
+        <div class="masonry-grid" style="position: relative; height: 466.218px;">
+            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-6"></div>
+            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-6" style="position: absolute; left: 0%; top: 0px;">
+                <!-- Work -->
+                <div class="work">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive img-1" src="images/1.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Image 1</h3>
+                        <p class="color-white margin-b-0">Stuff about image 1 </p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+            <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6" style="position: absolute; left: 50%; top: 0px;">
+                <!-- Work -->
+                <div class="work">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive img-2" src="images/1.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Image 2</h3>
+                        <p class="color-white margin-b-0">Stuff about Image 2</p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+            <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6" style="position: absolute; left: 50%; top: 233px;">
+                <!-- Work -->
+                <div class="work">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive img-3" src="images/1.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Image 3</h3>
+                        <p class="color-white margin-b-0">Stuff about Image 3  </p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+        </div>
+        <!-- End Masonry Grid -->
+    </div>
+</div>
 
-    <h2 class="section-headings">GRID</h2>
+
+<section class="coloured-section" id="title">
+  <div class="container">
+
+    <!-- Title -->
+
     <div class="row">
       <div class="col-sm-6">
-        <div class="container">
-          <img src="images/t1.jpg" alt="Avatar" class="image">
-          <div class="overlay">
-            <div class="text">Hello World</div>
-          </div>
-        </div>
+        <h1 class="Big-heading">BDS New Technology. Get updated by the Date.</h1>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Login</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Sign up</button>
       </div>
       <div class="col-sm-6">
-        <div class="row-sm">
-          <div class="container">
-            <img src="images/t2.jpg" alt="Avatar" class="image1">
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
-          </div>
-        </div>
-        <div class="row-sm">
-          <div class="container">
-            <img src="images/t2.jpg" alt="Avatar" class="image1">
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
-          </div>
-        </div>
+        <img src="images/t1.jpg"  style="margin-top: 30px;" alt="Avatar" width=100%>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
   <!-- Updates -->
-
-  <section class="coloured-section" id="updates">
-
-        <h2>News</h2></br>
-        <p>Get the letest notifications here !!:</p>
+  <section class="" id="updates">
+    <div class="container">
+      <span class="titles">
+        <h2>News</h2>
+      </span>
 
         <div class="row">
           <div class="col-md-4 box">
@@ -140,6 +166,8 @@
                 </div>
               </div>
             </div>
+    </div>
+        
   </section>
 
 
@@ -158,7 +186,7 @@
   <footer id="footer1">
     <div class="row">
       <div class="col-sm-5" id="logo">
-        <img src="images/ul-logo.png" alt="UL-logo" class="logo">
+        <img src="images/ul-master-green.jpg" alt="UL-logo" class="logo">
       </div>
       <div class="vl"></div>
       <div class="col-sm-6">
@@ -175,23 +203,34 @@
     </div>
   </footer>
 
-  <nav class="foot-bar">
+  <div class="foot-bar">
     <div class="row">
       <div class="col-sm-6">
-        <div class="container">
-          <ul>
-            <li><a href="">site map</a></li>
-            <li><a href="">Feedback</a></li>
-          </ul>
-        </div>
+        
+            <span style="margin:10px; margin-top: 10px;"><a href="">sitemap</a></span>
+            <span style="margin:10px; margin-top: 10px;"><a href="">feedback</a></span>
+            
+          
       </div>
       <div class="col-sm-6">
-        <div class="container">
-          <p>© Copyright 2022 BDS</p>
-        </div>
+        
+          <p style="float: right; margin-top: 10px;">© Copyright 2022 BDS</p>
+
       </div>
     </div>
   </nav>
+
+
+
+  <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
+  <script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
+  <script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
+
+  <script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
+  <script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
+
+  <!-- PAGE LEVEL SCRIPTS -->
+  <script src="js/masonry.min.js.download" type="text/javascript"></script>
 
 </body>
 
