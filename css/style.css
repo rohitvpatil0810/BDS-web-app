@@ -294,14 +294,13 @@ p {
 }
 
 div.vl {
-  border-left: 4px solid #003726;
-  height: 160px;
+  height: 30px;
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   div.vl {
-    display: none;
+    display: right;
   }
 }
 
