@@ -183,7 +183,7 @@ body {
   background-color: #005844;
   top: 0;
   z-index: 9999;
-  position: sticky;
+  position: static;
   overflow: hidden;
 
 }
@@ -382,4 +382,22 @@ div.vl {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+#head,  #this{
+  
+  background-color: white;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example1 {
+   0%  {background-color:white;}
+  25%  {background-color:rgb(97, 197, 197);}
+  50%  {background-color:rgb(86, 198, 218);}
+  75%  {background-color:rgb(77, 184, 233); }
+  100% {background-color:rgb(94, 177, 245); }
 }
