@@ -183,7 +183,7 @@ body {
   background-color: #005844;
   top: 0;
   z-index: 9999;
-  position: static;
+  position: sticky;
   overflow: hidden;
 
 }

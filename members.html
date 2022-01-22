@@ -11,8 +11,10 @@
 	<link rel="shortcut icon" href="img/img/sslogo.png">
 	<meta name="msapplication-TileColor" content="#00a8ff">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/masonry.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+<link rel="stylesheet" href="css/nav.css">
+ <!---<link rel="stylesheet" href="css/masonry.css">-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Normalize -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- Bootstrap -->
@@ -28,30 +30,43 @@
 	<link rel="stylesheet" type="text/css" href="css/sysadmin.css">
 </head>
 
-<body>
+<body id="navv">
 	<!-- Header Nav-Bar -->
 	<div class="header bg-light">
 		<img src="images/logo-bds-black.png" alt="bds-logo" class="bds-logo">
-		<div class="search">
-		  <form action="" class="search-form">
-			<input type="text" name="" id="" placeholder="Search">
-			<button class="search-btn">Search</button>
-		  </form>
-		</div>
+		
 	  </div>
-	  <nav class="nav-bar" id="navlist">
-		<ul>
-			<li class="active"><a href="index.html">Home</a></li>
-			<li><a href="about.html"class="anav">About</a></li>
-			<li><a href="members.html" class="anav">Members</a></li>
-			<li><a href="" class="anav">Projects</a></li>
-			<li><a href="" class="anav">Publications</a></li>
-			<li><a href="interns.html" class="anav">Interns</a></li>
-			<li><a href="" class="anav">Alumni</a></li>
-			<li><a href="activities.html" class="anav">Weekely Activities</a></li>
-		</ul>
-	  </nav>
-	  <!--Main Body-->
+	  <!--Responsive Nav-->
+	  <div class="topnav" id="myTopnav">
+  
+		<a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+		<a href="about.html"class="anav">About</a>
+		<a href="members.html" class="anav">Members</a>
+		<a href="" class="anav">Projects</a>
+		<a href="" class="anav">Publications</a>
+		<a href="interns.html" class="anav">Interns</a>
+		<a href="" class="anav">Alumni</a>
+		<a href="activities.html" class="anav">Weekely Activities</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
+</body>
+
+ <!--Main Body-->
+<body>
+	  
+	 
 	<div class="preloader">
 		<img src="images\logo-bds-white.png" alt="Preloader image">
 	</div>

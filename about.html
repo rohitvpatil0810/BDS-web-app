@@ -8,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="css/aboutstyle.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <!--<link rel="stylesheet" href="css/style.css">-->
+  <!--<link rel="stylesheet" href="css/masonry.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>BDS</title>
   <link rel="icon" type="image/x-icon" href="images\logo.jpg">
   <!-- Font Awsome -->
@@ -28,30 +31,42 @@
 
 </head>
 
-<body>
+<body id="navv">
    <!-- Header Nav-Bar -->
-   <div class="header bg-light">
+   <div class="content">
     <img src="images/logo-bds-black.png" alt="bds-logo" class="bds-logo">
-    <div class="search">
-      <form action="" class="search-form">
-        <input type="text" name="" id="" placeholder="Search">
-        <button class="search-btn">Search</button>
-      </form>
-    </div>
+    
   </div>
-  <nav class="nav-bar" id="navlist">
-    <ul>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="about.html"class="anav">About</a></li>
-      <li><a href="members.html" class="anav">Members</a></li>
-      <li><a href="" class="anav">Projects</a></li>
-      <li><a href="" class="anav">Publications</a></li>
-      <li><a href="interns.html" class="anav">Interns</a></li>
-      <li><a href="" class="anav">Alumni</a></li>
-      <li><a href="activities.html" class="anav">Weekely Activities</a></li>
-    </ul>
-  </nav>
-<!--Body-->
+
+  <!--Responsive Nav-->
+  <div class="topnav" id="myTopnav">
+  
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="about.html"class="anav">About</a>
+      <a href="members.html" class="anav">Members</a>
+      <a href="" class="anav">Projects</a>
+      <a href="" class="anav">Publications</a>
+      <a href="interns.html" class="anav">Interns</a>
+      <a href="" class="anav">Alumni</a>
+      <a href="activities.html" class="anav">Weekely Activities</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>
+  <!--Body-->
+
+<body id="ded">
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">ABOUT US!</span>
@@ -92,6 +107,7 @@
   <span class="border">LETSGO!</span>
   </div>
 </div>
+</body>
 <div class="container-fluid bg-3 text-center">    
   <h3>Any News or Something?</h3><br>
   <div class="row">
@@ -148,6 +164,7 @@
     </div>
   </div>
 </nav>
+
    
 
 </body>

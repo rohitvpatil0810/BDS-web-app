@@ -1,4 +1,4 @@
-body, html {
+html, body {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -16,7 +16,7 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("https://cdn.discordapp.com/attachments/814533488350724097/933048892398915584/beatriz-perez-moya-XN4T2PVUUgk-unsplash.jpg");
-  min-height: 100%;
+  min-height: 400px;
 }
 
 .bgimg-2 {
