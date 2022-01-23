@@ -1,0 +1,6 @@
+<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
+	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
+	<meta name="author" content="Rishi Giri { Dotjs }" />
+	<link rel="shortcut icon" href="img/img/sslogo.png">
+	<meta name="msapplication-TileColor" content="#00a8ff">
+	<meta name="theme-color" content="#ffffff">
