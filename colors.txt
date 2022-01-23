@@ -1,0 +1,15 @@
+First Greens:
+
+Navbar: #005844
+navbar active: #04AA6D
+Footer bg: #003726
+Colored Section: #005844
+
+
+Blues:
+
+Navbar: #4968A6
+navbar active: #738CBF
+Footer bg: #0D0D0D
+Colored Section: #4968A6
+greyish white: #C5CCD9

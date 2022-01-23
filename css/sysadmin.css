@@ -289,7 +289,9 @@ section {
 
 .shit
 {
-	border-radius:100px;
+	border-radius:150px;
+	width: 200px;
+	left: 50%;
 }
 
 .modal {
@@ -306,7 +308,7 @@ section {
 	position: relative;
 	padding: 45px 30px;
 	text-align: center;
-	background: url("https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?size=626&ext=jpg");
+	background: url("https://img3.wallspic.com/originals/6/4/4/9/5/159446-xiaomi-miui_9-standing-blue-aqua-1080x1920.png");
 	color: black;
 	box-shadow: white 0px 0px 2px;
 	border-radius: 2px;

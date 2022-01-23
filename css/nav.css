@@ -12,6 +12,9 @@
   }
   .nav-container{
     background-color: #005844;
+    top: 0;
+    z-index: 999;
+    position: sticky;
   }
   
   .topnav{
@@ -94,6 +97,8 @@
   }
   #footer p{
     line-height: 2;
+    font-weight: 400;
+    font-size: 1rem;
   }
   .foot-bar {
     background-color: #003726;
