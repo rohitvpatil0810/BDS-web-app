@@ -40,80 +40,55 @@
 
 <!-- HEADER  -->
 <div class="header">
-    <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
-    <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
+  <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
+  <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
+</div>
+
+
+<div class="nav-container">
+  <div class="topnav container" id="myTopnav">
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a  class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a  href="about.html"class="anav">About</a>
+    <a href="members.html" class="anav">Members</a>
+    <a href="projects.html" class="anav">Projects</a>
+    <a href="" class="anav">Publications</a>
+    <a href="interns.html" class="anav">Interns</a>
+    <a href="" class="anav">Alumni</a>
+    <a href="activities.html" class="anav">Weekely Activities</a>
+
   </div>
-
-
-  <div class="nav-container">
-    <div class="topnav container" id="myTopnav">
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-      <a href="about.html"class="anav">About</a>
-      <a href="members.html" class="anav">Members</a>
-      <a href="" class="anav">Projects</a>
-      <a href="" class="anav">Publications</a>
-      <a href="interns.html" class="anav">Interns</a>
-      <a href="" class="anav">Alumni</a>
-      <a class="active" href="activities.html" class="anav">Weekely Activities</a>
-      
-    </div>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
+  }
 
-=======
-  <!-- Header Nav-Bar -->
-  <div class="header bg-light">
-    <img src="images/logo-bds-black.png" alt="bds-logo" class="bds-logo">
-    <div class="search">
-      <form action="" class="search-form">
-        <input type="text" name="" id="" placeholder="Search">
-        <button class="search-btn">Search</button>
-      </form>
-    </div>
-  </div>
-  <nav class="nav-bar" id="navlist">
-    <ul>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="about.html" target="_blank" class="anav">About</a></li>
-      <li><a href="members.html" class="anav">Members</a></li>
-      <li><a href="projects.html" class="anav">Projects</a></li>
-      <li><a href="" class="anav">Publications</a></li>
-      <li><a href="interns.html" class="anav">Interns</a></li>
-      <li><a href="" class="anav">Alumni</a></li>
-      <li><a href="activities.html" class="anav">Weekely Activities</a></li>
-    </ul>
-  </nav>
->>>>>>> Stashed changes
 
-      var resizeTimer;
-      $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          if ( $(window).width() <= 1000) {     
-            var x = document.getElementById("myTopnav");
-            x.classList.remove("container");
-          }
-          else{
-            var x = document.getElementById("myTopnav");
-            x.classList.add("container");
-          }
-        }, 200);
-      });
+    var resizeTimer;
+    $(window).resize(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        if ( $(window).width() <= 1000) {
+          var x = document.getElementById("myTopnav");
+          x.classList.remove("container");
+        }
+        else{
+          var x = document.getElementById("myTopnav");
+          x.classList.add("container");
+        }
+      }, 200);
+    });
 
-    </script>
-  </div>
-<!--HEADER END-->
+  </script>
+</div>
   <!--Body Start-->
 
   <!-- Picture Grid -->
@@ -685,7 +660,7 @@
           <div class="foot-list-title">
             <h4>Contact Us</h4>
           </div>
-          
+
           <p><span>+91-2340938475</span><br>
             <span>contactus@gmail.com</span><br>
             <span>UL University, Hometown 43100648.</span>
@@ -709,16 +684,16 @@
           <h6><a href="feedback.html">Sitemap</a></h6>
         </div>
       </div>
-  
+
       <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
-  
+
       <div class="row">
         <div class="col-sm-8">
           <p>© Copyright 2022 BDS</p>
         </div>
-        
+
       </div>
-    </div>   
+    </div>
 </footer>
 
 <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
