@@ -28,6 +28,13 @@ h1, h2{
   font-family: 'Cormorant Garamond', serif;
   font-size: 4rem;
 }
+.section-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+
+}
 .image {
   display: block;
   width: 40rem;

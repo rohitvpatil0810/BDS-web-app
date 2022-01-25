@@ -13,7 +13,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
@@ -38,10 +38,13 @@
 <body>
 
 <!-- HEADER  -->
+<div class="container">
   <div class="header">
     <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
     <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
   </div>
+</div>
+  
 
 
   <div class="nav-container">
@@ -104,7 +107,7 @@
           <!-- Work -->
           <div class="work">
             <div class="work-overlay">
-              <img class="full-width img-responsive img-1" src="images/college1.jpg" alt="Portfolio Image">
+              <img class="full-width img-responsive img-1" src="images/photo1.jpeg" alt="Portfolio Image">
             </div>
             <div class="work-content">
               <h3 class="color-white margin-b-5">Image 1</h3>
@@ -118,7 +121,7 @@
           <!-- Work -->
           <div class="work">
             <div class="work-overlay">
-              <img class="full-width img-responsive img-2" src="images/college2.jpg" alt="Portfolio Image">
+              <img class="full-width img-responsive img-2" src="images/photo2.jpg" alt="Portfolio Image">
             </div>
             <div class="work-content">
               <h3 class="color-white margin-b-5">Image 2</h3>
@@ -132,7 +135,7 @@
           <!-- Work -->
           <div class="work">
             <div class="work-overlay">
-              <img class="full-width img-responsive img-3" src="images/college3.jpg" alt="Portfolio Image">
+              <img class="full-width img-responsive img-3" src="images/photo3.jpg" alt="Portfolio Image">
             </div>
             <div class="work-content">
               <h3 class="color-white margin-b-5">Image 3</h3>
@@ -167,29 +170,13 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <hr style="margin: 0; background-color: #fff;">
-    </div>
-
-    <div class="container mid-section">
-      <h1 class="section-heading">Our Sponsers</h1>
-
-      <div class="row">
-        <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/Tc.png" alt="tc-logo"></div>
-        <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/tnw.png" alt="tnw-logo"></div>
-        <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/biz.jpg" alt="biz-insider-logo"></div>
-        <div class="col-sm-3 sponsor-box  "><img class="press-logos" src="images/marbel.webp" alt="mashable-logo"></div>
-      </div>
-
-    </div>
-
   </section>
 
   <!-- Updates -->
   <section class="" id="updates">
     <div class="container">
       <span class="titles">
-        <h1 class="section-heading">News</h1>
+        <h1 class="section-title" style="margin-bottom: 3rem;margin-top: 1rem;">News</h1>
       </span>
 
       <div class="row news-grid">
@@ -197,8 +184,8 @@
           <div class="card" >
             <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">News 1</h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, ea.</p>
+              <h4 class="card-title">New paper by the BDS Group</h4>
+              <p class="card-text">New paper by the BDS Group published in the Springer Nature: SN Computer Science Journal: "Seeding Grammars in Grammatical Evolution to Improve Search-Based Software Testing"</p>
               <a href="#" class="btn btn-primary stretched-link">Read More</a>
             </div>
           </div>
@@ -207,8 +194,8 @@
           <div class="card">
             <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">News 2</h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, ea.</p>
+              <h4 class="card-title">Evathon 2021</h4>
+              <p class="card-text">#Evathon21 is over! Congrats "Ctrl+Alt+Elite": Yash Bhavsar, Jay Munjapara + Jenil Kanani! Runners up "Rak_Aarp": Abhijit Roy, Ankit Saran, Pankaj Agarwal & Roshne Kushalappa. 3rd place (& best all-female team), "The Decoders", : Nandini Narvekar, Nishita Nandanwar & Gauri Naik.</p>
               <a href="#" class="btn btn-primary stretched-link">Read More</a>
             </div>
           </div>
@@ -217,17 +204,41 @@
           <div class="card" >
             <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">News 3</h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, ea.</p>
+              <h4 class="card-title">@Gauravsomwanshi at Evathon!</h4>
+              <p class="card-text">Thanks to @Gauravsomwanshi
+                for an inspiring talk at #Evathon21. @EmertechIO
+                are doing some incredible blockchain work. @LeroCentre</p>
               <a href="#" class="btn btn-primary stretched-link">Read More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">New paper by the BDS Group published in the Springer Nature: SN Computer Science Journal: &quot;Seeding Grammars in Grammatical Evolution to Improve Search-Based Software Testing&quot; <a href="https://t.co/oNLC96dAVJ">https://t.co/oNLC96dAVJ</a> <a href="https://t.co/8eTSnTkB3g">pic.twitter.com/8eTSnTkB3g</a></p>&mdash; BDS_UniLimerick (@bds_unilimerick) <a href="https://twitter.com/bds_unilimerick/status/1404754065112842248?ref_src=twsrc%5Etfw">June 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+      <div class="col-md-4">
+        <blockquote class="twitter-tweet" data-theme="dark"><p lang="hi" dir="ltr"><a href="https://twitter.com/hashtag/Evathon21?src=hash&amp;ref_src=twsrc%5Etfw">#Evathon21</a> is over! Congrats &quot;Ctrl+Alt+Elite&quot;: Yash Bhavsar, Jay Munjapara + Jenil Kanani! Runners up &quot;Rak_Aarp&quot;: Abhijit Roy, Ankit Saran, Pankaj Agarwal &amp; Roshne Kushalappa. 3rd place (&amp; best all-female team), &quot;The Decoders&quot;, : Nandini Narvekar, Nishita Nandanwar &amp; Gauri Naik.</p>&mdash; BDS_UniLimerick (@bds_unilimerick) <a href="https://twitter.com/bds_unilimerick/status/1431990819343396871?ref_src=twsrc%5Etfw">August 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+      <div class="col-md-4">
+        <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/Gauravsomwanshi?ref_src=twsrc%5Etfw">@Gauravsomwanshi</a> for an inspiring talk at <a href="https://twitter.com/hashtag/Evathon21?src=hash&amp;ref_src=twsrc%5Etfw">#Evathon21</a>. <a href="https://twitter.com/EmertechIO?ref_src=twsrc%5Etfw">@EmertechIO</a> are doing some incredible blockchain work. <a href="https://twitter.com/LeroCentre?ref_src=twsrc%5Etfw">@LeroCentre</a> <a href="https://t.co/tIXnzyP3gj">pic.twitter.com/tIXnzyP3gj</a></p>&mdash; BDS_UniLimerick (@bds_unilimerick) <a href="https://twitter.com/bds_unilimerick/status/1431208426709962753?ref_src=twsrc%5Etfw">August 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+    </div>
+  </div>
+  <div class="container mid-section">
+    <h1 class="section-title">Our Sponsers</h1>
 
+    <div class="row">
+      <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/Tc.png" alt="tc-logo"></div>
+      <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/tnw.png" alt="tnw-logo"></div>
+      <div class="col-sm-3 sponsor-box"><img class="press-logos" src="images/biz.jpg" alt="biz-insider-logo"></div>
+      <div class="col-sm-3 sponsor-box  "><img class="press-logos" src="images/marbel.webp" alt="mashable-logo"></div>
+    </div>
+
+  </div>
 
 
 
