@@ -29,16 +29,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/projects.css">
 
 </head>
 
 <body class="bg-light">
 
-<!-- HEADER  -->
-<div class="header">
-  <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
-  <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
-</div>
+  <!-- HEADER  -->
+  <div class="container">
+    <div class="header">
+      <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
+      <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
+    </div>
+  </div>
 
 
 <div class="nav-container">
@@ -67,7 +70,6 @@
     }
   }
 
-
     var resizeTimer;
     $(window).resize(function() {
       clearTimeout(resizeTimer);
@@ -88,163 +90,154 @@
 
   <!--Body Start-->
 
-  <section class="" id="updates">
-    <div class="container">
-      <span class="titles">
-        <h2>News</h2>
-      </span>
-
-        <div class="row news-grid">
-          <div class="col-md-4 box">
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">News1</h4>
-                  <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                </div>
-              </div>
-              </div>
-              <div class="col-md-4 box" >
-                <div class="card" style="width:400px">
-                  <div class="card-body">
-                    <h4 class="card-title">News2</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                </div>
-              </div>
-              <div class="col-md-4 box">
-                <div class="card" style="width:400px">
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">News3</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="news pt-0">
+    <div class="container mt-md-5">
+      <h2 class="mx-4 my-0 text-center">Interns</h2>
+      <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-1.jpg" alt="LunarXP Wins Space Innovator of the Year Award" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 1</span>
+            <h4 class="mt-3"><a href="#">LunarXP Wins Space Innovator of the Year Award</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-2.jpg" alt="New Spending Bill Expands Funding for Space Exploration" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 2</span>
+            <h4 class="mt-3"><a href="#">New Spending Bill Expands Funding for Space Exploration</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-3.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 3</span>
+            <h4 class="mt-3"><a href="#">LunarXP Sets Target for First Mars Landing in 2030</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Updates -->
-  <section class="" id="updates">
-    <div class="container">
-
-        <div class="row news-grid">
-          <div class="col-md-4 box">
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">News1</h4>
-                  <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                </div>
-              </div>
-              </div>
-              <div class="col-md-4 box" >
-                <div class="card" style="width:400px">
-                  <div class="card-body">
-                    <h4 class="card-title">News2</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                </div>
-              </div>
-              <div class="col-md-4 box">
-                <div class="card" style="width:400px">
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">News3</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="news pt-0">
+    <div class="container mt-md-5">
+      <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-1.jpg" alt="LunarXP Wins Space Innovator of the Year Award" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 1</span>
+            <h4 class="mt-3"><a href="#">LunarXP Wins Space Innovator of the Year Award</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-2.jpg" alt="New Spending Bill Expands Funding for Space Exploration" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 2</span>
+            <h4 class="mt-3"><a href="#">New Spending Bill Expands Funding for Space Exploration</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-3.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 3</span>
+            <h4 class="mt-3"><a href="#">LunarXP Sets Target for First Mars Landing in 2030</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Updates -->
-  <section class="" id="updates">
-    <div class="container">
-        <div class="row news-grid">
-          <div class="col-md-4 box">
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">News1</h4>
-                  <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                </div>
-              </div>
-              </div>
-              <div class="col-md-4 box" >
-                <div class="card" style="width:400px">
-                  <div class="card-body">
-                    <h4 class="card-title">News2</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                </div>
-              </div>
-              <div class="col-md-4 box">
-                <div class="card" style="width:400px">
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">News3</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="news pt-0">
+    <div class="container mt-md-5">
+      <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-1.jpg" alt="LunarXP Wins Space Innovator of the Year Award" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 1</span>
+            <h4 class="mt-3"><a href="#">LunarXP Wins Space Innovator of the Year Award</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-2.jpg" alt="New Spending Bill Expands Funding for Space Exploration" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 2</span>
+            <h4 class="mt-3"><a href="#">New Spending Bill Expands Funding for Space Exploration</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-3.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 3</span>
+            <h4 class="mt-3"><a href="#">LunarXP Sets Target for First Mars Landing in 2030</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Updates -->
-  <section class="" id="updates">
-    <div class="container">
-
-        <div class="row news-grid">
-          <div class="col-md-4 box">
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">News1</h4>
-                  <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                </div>
-              </div>
-              </div>
-              <div class="col-md-4 box" >
-                <div class="card" style="width:400px">
-                  <div class="card-body">
-                    <h4 class="card-title">News2</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                </div>
-              </div>
-              <div class="col-md-4 box">
-                <div class="card" style="width:400px">
-                  <img class="card-img-top" src="images/t1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">News3</h4>
-                    <p class="card-text">Some example text some example text.Some example text some example text.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="news pt-0">
+    <div class="container mt-md-5">
+      <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-1.jpg" alt="LunarXP Wins Space Innovator of the Year Award" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 1</span>
+            <h4 class="mt-3"><a href="#">LunarXP Wins Space Innovator of the Year Award</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-2.jpg" alt="New Spending Bill Expands Funding for Space Exploration" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 2</span>
+            <h4 class="mt-3"><a href="#">New Spending Bill Expands Funding for Space Exploration</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="https://raw.githubusercontent.com/solodev/recent-blog-posts/master/images/news-3.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Project 3</span>
+            <h4 class="mt-3"><a href="#">LunarXP Sets Target for First Mars Landing in 2030</a></h4>
+            <!--  <p></p> -->
+            <a href="#" class="read-more">Read more ></a>
+          </div><!-- .image-block-inner -->
+        </li>
+      </ul>
     </div>
   </section>
-
 
 
 <!-- Footer -->
