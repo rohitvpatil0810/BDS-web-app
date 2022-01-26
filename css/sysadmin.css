@@ -163,23 +163,23 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: white;
 }
 
-.btn.btn-blue {
-	background: #00a8ff;
+.btn.btn-ulgreen {
+	background: #04AA6D;
 }
 
-.btn.btn-blue:hover {
-	background: #31b9ff;
+.btn.btn-ulgreen:hover {
+	background: #04AA6D;
 }
 
-.btn.btn-blue-fill {
-	color: #00a8ff;
-	border-color: #00a8ff;
+.btn.btn-ulgreen-fill {
+	color: #04AA6D;
+	border-color: #04AA6D;
 	background: transparent;
 }
 
-.btn.btn-blue-fill:hover {
+.btn.btn-ulgreen-fill:hover {
 	color: white;
-	background: #00a8ff;
+	background: #04AA6D;
 }
 
 .btn.btn-white-fill {
@@ -261,6 +261,12 @@ section {
 	padding-bottom: 60px;
 	background: white;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+}
+.team:hover {
+	margin: 100px 0;
+	padding-bottom: 60px;
+	background: white;
+	box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team .cover .overlay {
