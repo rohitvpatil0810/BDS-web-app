@@ -6,6 +6,7 @@
 body {
   text-align: left;
   color: black;
+
 }
 body,p{
   font-family: 'Inter', sans-serif;
@@ -18,7 +19,9 @@ h1, h2{
 }
 
 
-
+.inbody{
+  background-color: #E8E8E8;
+}
 .mid-section{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -189,18 +192,41 @@ p {
   }
 }
 
-/* Cookies */
-.modal-dialog {
-  margin-top: 0rem;
-  max-width: 100%;
 
-  .modal-content {
-    border-radius: 0rem;
-  }
 
-  .buttons {
-    .btn {
-      margin: 0.2rem;
-    }
-  }
+/* Cookie Card */
+.modal-content{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.card {
+  width: 400px;
+  flex-direction: column;
+  min-width: 0;
+  color: #fff;
+  word-wrap: break-word;
+  background-color: #000;
+  background-clip: border-box;
+  border: 1px solid #000;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.cookie a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 8px;
+  font-size: 12px
+}
+
+.cookie a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 8px
+}
+
+.decline {
+  cursor: pointer
 }
