@@ -22,6 +22,14 @@ h1, h2{
 .inbody{
   background-color: #fff;
 }
+.jumbotron{
+  background-color:#003726 ;
+  margin-top:2rem
+}
+.top-section{
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
 .mid-section{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -84,18 +92,23 @@ h1, h2{
 }
 
 
-
-
-.foot-bar a{
-  text-decoration: none;
-  color: #fff;
-}
 /* Unsorted*/
 
 p {
   color: #afafaf;
 }
 
+.hr{
+  height:1px;
+  width: 20%;
+  border-width:4px;
+  margin:auto;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+.name{
+  font-family: "Inter",sans-serif;
+}
 
 
 .section-headings {
