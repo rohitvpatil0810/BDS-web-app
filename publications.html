@@ -26,6 +26,9 @@
   <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!--Data Table-->
+  <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+  <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -93,72 +96,132 @@
 
   <div class="container">
     <div class="row justify-content-center">
-      <h1 class="section-title"  style="margin-bottom: 3rem;margin-top: 3rem;" >Interns</h1>
+      <h1 class="section-title"  style="margin-bottom: 3rem;margin-top: 3rem;" >Publications</h1>
     </div>
-    
-          <div class="row">
-            <!-- Single Advisor-->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <!-- Team Thumb-->
-                <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                  <!-- Social Info-->
-                  <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                </div>
-                <!-- Team Details-->
-                <div class="single_advisor_details_info">
-                  <h6>Samantha Sarah</h6>
-                  <p class="designation">Founder &amp; CEO</p>
-                </div>
-              </div>
-            </div>
-            <!-- Single Advisor-->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                <!-- Team Thumb-->
-                <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
-                  <!-- Social Info-->
-                  <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                </div>
-                <!-- Team Details-->
-                <div class="single_advisor_details_info">
-                  <h6>Nazrul Islam</h6>
-                  <p class="designation">UI Designer</p>
-                </div>
-              </div>
-            </div>
-            <!-- Single Advisor-->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                <!-- Team Thumb-->
-                <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
-                  <!-- Social Info-->
-                  <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                </div>
-                <!-- Team Details-->
-                <div class="single_advisor_details_info">
-                  <h6>Riyadh Khan</h6>
-                  <p class="designation">Developer</p>
-                </div>
-              </div>
-            </div>
-            <!-- Single Advisor-->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <!-- Team Thumb-->
-                <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
-                  <!-- Social Info-->
-                  <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                </div>
-                <!-- Team Details-->
-                <div class="single_advisor_details_info">
-                  <h6>Niloy Islam</h6>
-                  <p class="designation">Marketing Manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row">
+        <table id="myTable" class="table table-striped">  
+            <thead>  
+              <tr>  
+                <th>ENO</th>  
+                <th>EMPName</th>  
+                <th>Country</th>  
+                <th>Salary</th>  
+              </tr>  
+            </thead>  
+            <tbody>  
+              <tr>  
+                <td>001</td>  
+                <td>Anusha</td>  
+                <td>India</td>  
+                <td>10000</td>  
+              </tr>  
+              <tr>  
+                <td>002</td>  
+                <td>Charles</td>  
+                <td>United Kingdom</td>  
+                <td>28000</td>  
+              </tr>  
+              <tr>  
+                <td>003</td>  
+                <td>Sravani</td>  
+                <td>Australia</td>  
+                <td>7000</td>  
+              </tr>  
+               <tr>  
+                <td>004</td>  
+                <td>Amar</td>  
+                <td>India</td>  
+                <td>18000</td>  
+              </tr>  
+              <tr>  
+                <td>005</td>  
+                <td>Lakshmi</td>  
+                <td>India</td>  
+                <td>12000</td>  
+              </tr>  
+              <tr>  
+                <td>006</td>  
+                <td>James</td>  
+                <td>Canada</td>  
+                <td>50000</td>  
+              </tr>  
+              
+               <tr>  
+                <td>007</td>  
+                <td>Ronald</td>  
+                <td>US</td>  
+                <td>75000</td>  
+              </tr>  
+              <tr>  
+                <td>008</td>  
+                <td>Mike</td>  
+                <td>Belgium</td>  
+                <td>100000</td>  
+              </tr>  
+              <tr>  
+                <td>009</td>  
+                <td>Andrew</td>  
+                <td>Argentina</td>  
+                <td>45000</td>  
+              </tr>  
+              
+                <tr>  
+                <td>010</td>  
+                <td>Stephen</td>  
+                <td>Austria</td>  
+                <td>30000</td>  
+              </tr>  
+              <tr>  
+                <td>011</td>  
+                <td>Sara</td>  
+                <td>China</td>  
+                <td>750000</td>  
+              </tr>  
+              <tr>  
+                <td>012</td>  
+                <td>JonRoot</td>  
+                <td>Argentina</td>  
+                <td>65000</td>  
+              </tr>  
+            </tbody>  
+          </table>  
+          <script>
+            $(document).ready(function(){
+                $('#myTable').dataTable();
+            });
+            </script>
+    </div>
+    <div class="container">
+        <h2>Striped Rows</h2>
+        <p>The .table-striped class adds zebra-stripes to a table:</p>            
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>     
+  </div>
 
 
 

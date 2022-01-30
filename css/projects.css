@@ -44,6 +44,7 @@
 
   .image-block li>.image-block-inner>a img {
     border: 1px solid #e1e1df;
+    max-width: 100%;
   }
 
   .image-block li>.image-block-inner:hover {
