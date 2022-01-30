@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BDS</title>
+
+
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrp scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Font Awsome -->
+  <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/conor.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER  -->
+  <div class="container">
+    <div class="header">
+      <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
+      <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head" class="header-logo">
+    </div>
+  </div>
+
+
+
+  <div class="nav-container">
+    <div class="topnav container" id="myTopnav">
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a  class="active" href="index.html">Home</a>
+      <a href="members.html" class="anav">Members</a>
+      <a href="projects.html" class="anav">Projects</a>
+      <a href="" class="anav">Publications</a>
+      <a href="" class="anav">Alumni</a>
+      <a href="activities.html" class="anav">Weekly Activities</a>
+      <a href="interns.html" class="anav">Interns</a>
+
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+
+      var resizeTimer;
+      $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          if ($(window).width() <= 1000) {
+            var x = document.getElementById("myTopnav");
+            x.classList.remove("container");
+          } else {
+            var x = document.getElementById("myTopnav");
+            x.classList.add("container");
+          }
+        }, 200);
+      });
+    </script>
+  </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="name text-center text-white">Gauri Vaidya</h1> 
+      <hr class="hr">
+    </div>
+  </div>
+<div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-4">
+          
+            <img src="images\WhatsApp Image 2022-01-30 at 21.50.54.jpeg" class="img-fluid" alt="Gauri">
+            <h3 class="desgn">Ph.D. Student</h3>
+            <ul class="social-network social-circle">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-2x fa-facebook"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-2x fa-linkedin"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google"><i class="fa fa-2x fa-google"></i></a></li>
+            </ul>  
+        			
+		</div>
+        <div class="aboutconor col-md-8">
+			<p class="text-body">Gauri Vaidya is a first-year Ph.D. student at Biocomputing and Developmental System Group (BDS) in the Computer Science and Information Systems (CSIS) department at the University of Limerick, where she is supervised by Professor Conor Ryan, Full Professor at the University of Limerick. Her research is in the field of Evolutionary Computation which is a subfield of Artificial Intelligence. During her research, she will develop techniques to develop a multimodal Grammatical Evolution tool that represents multiple different data modalities and aims at integrating them to get valuable insights. Gauri holds a Bachelor’s degree in Computer Science and Engineering from the Government College of Engineering, Aurangabad, India. Her Bachelor thesis was to develop a blockchain-based First Information Report (FIR) for the City Police Service to avoid malicious tampering. Prior to joining the CRT-AI-funded Ph.D. program, Gauri worked as a Trainee-Analyst in Principal Global Services, Pune, India. Her work included developing customized applications for the clients in Salesforce software tool, the world’s largest Customer Relation Management tool. In her spare time, Gauri enjoys reading books, painting, and exploring art forms.</p>
+        </div>
+	</div>
+</div>
+
+<!-- Footer -->
+
+<footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 pt-5" id="logo">
+          <img src="images/ul-logo-white.png" alt="UL-logo" class="logo">
+        </div>
+        <div class="col-sm-3 pt-5">
+          <div class="foot-list-title">
+            <h4>CONTACT US</h4>
+          </div>
+
+          <p><span>+91-2340938475</span><br>
+            <span>contactus@gmail.com</span><br>
+            <span>UL University, Hometown 43100648.</span>
+          </p>
+          <div>
+            <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fas fa-envelope"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-3 pt-5">
+          <div class="foot-list-title">
+            <h4>GENERAL</h4>
+          </div>
+          <h6><a href="feedback.html">Terms of Use</a></h6>
+          <h6><a href="feedback.html">Feedback</a></h6>
+          <h6><a href="feedback.html">Events</a></h6>
+          <h6><a href="feedback.html">Privacy Policy</a></h6>
+          <h6><a href="feedback.html">Sitemap</a></h6>
+        </div>
+      </div>
+
+      <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <p>© Copyright 2022 BDS</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/jquery.onepagenav.js"></script>
+	<script src="js/main.js"></script>
+	<script src="demo.js">
+	</script>
+
+
+
+</body>
+
+</html>
