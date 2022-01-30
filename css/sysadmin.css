@@ -1,12 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
-body {
-	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	overflow-x: hidden;
-	color: #2a3237;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+
 
 .parallax {
 	position: absolute;
@@ -48,36 +41,8 @@ p {
 	color: #8a8e91;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-	position: relative;
-	margin: 10px 0;
-}
 
-h1 {
-	font-size: 60px;
-}
 
-h2 {
-	font-size: 48px;
-}
-
-h3 {
-	font-size: 30px;
-	color: white;
-}
-
-h4 {
-	font-size: 24px;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
-	font-size: 16px;
-}
 
 header {
 	position: relative;
@@ -208,10 +173,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	top: 50px;
 }
 
-.container {
-	position: relative;
-	z-index: 1;
-}
+
 
 section {
 	position: relative;
