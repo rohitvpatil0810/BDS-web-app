@@ -14,6 +14,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+<!--Dummy Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -29,12 +35,14 @@
 <!-- Custom Styles -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/masonry.css">
-<link href="css/activities.css" rel="stylesheet">
+<link rel="stylesheet" href="css/weekly-font-style.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/weekly-animate.css">
+<link rel="stylesheet" href="css/weekly-style.css">
 
 </head>
 
-<body class="bg-light">
+<body>
 
 
   <!-- HEADER  -->
@@ -89,460 +97,77 @@
 
   </script>
 </div>
-  <!--Body Start-->
-
-  <!-- Picture Grid -->
-
-  <div class="bg-color-sky-light">
-
-    <div class="content-md container">
-      <span class="titles">
-      </span>
-      <!-- Masonry Grid -->
-      <div class="masonry-grid" style="position: relative; height: 466.218px;">
-        <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-6"></div>
-        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-6" style="position: absolute; left: 0%; top: 0px;">
-          <!-- Work -->
-          <div class="work">
-            <div class="work-overlay">
-              <img class="full-width img-responsive img-1" src="images/photo1.jpeg" alt="Portfolio Image">
-            </div>
-            <div class="work-content">
-              <h3 class="color-white margin-b-5">Image 1</h3>
-              <p class="color-white margin-b-0">Stuff about image 1 </p>
-            </div>
-            <a class="content-wrapper-link" href="#"></a>
-          </div>
-          <!-- End Work -->
-        </div>
-        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6" style="position: absolute; left: 50%; top: 0px;">
-          <!-- Work -->
-          <div class="work">
-            <div class="work-overlay">
-              <img class="full-width img-responsive img-2" src="images/photo2.jpg" alt="Portfolio Image">
-            </div>
-            <div class="work-content">
-              <h3 class="color-white margin-b-5">Image 2</h3>
-              <p class="color-white margin-b-0">Stuff about Image 2</p>
-            </div>
-            <a class="content-wrapper-link" href="#"></a>
-          </div>
-          <!-- End Work -->
-        </div>
-        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6" style="position: absolute; left: 50%; top: 233px;">
-          <!-- Work -->
-          <div class="work">
-            <div class="work-overlay">
-              <img class="full-width img-responsive img-3" src="images/photo3.jpg" alt="Portfolio Image">
-            </div>
-            <div class="work-content">
-              <h3 class="color-white margin-b-5">Image 3</h3>
-              <p class="color-white margin-b-0">Stuff about Image 3 </p>
-            </div>
-            <a class="content-wrapper-link" href="#"></a>
-          </div>
-          <!-- End Work -->
-        </div>
+<!--Body Start-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="name text-center text-white">Weekly Activities</h1>
+      <hr class="hr">
+    </div>
+</div>
+<div class="content">
+    
+    <div class="container">
+      <div class="d-flex carousel-nav">
+        <a href="#" class="col active">Discussion Groups</a>
+        <a href="#" class="col">Workshops</a>
       </div>
-      <!-- End Masonry Grid -->
+
+
+      <div class="owl-carousel owl-1">
+        <!-- Row 1 Tab 1-->
+        <div class="media-29101 d-md-flex w-100">
+                <div class="img">
+                    <img src="images/weekly-activities/picture1.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="text">
+                    <a class="category d-block mb-4" href="#">7th February, 2022</a>
+                    <h2><a href="#">On the Locality of Grammatical Evolution</a></h2>
+                </div>
+                
+        </div> <!-- .item -->
+        <!-- Row 1 Tab 2-->
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/weekly-activities/Picture2.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">20th January, 2022</a>
+            <h2><a href="#">GECCO Workshop</a></h2>
+            <a class="category d-block mb-4" href="#">Sarmad, Atif, Samuel/Allan, Krishn</a>
+          </div>
+        </div> <!-- .item -->
+
+        
+
+      </div>
+      <div class="owl-carousel owl-1">
+        <!-- Row 2 Tab 1-->
+        <div class="media-29101 d-md-flex w-100">
+            <div class="img">
+                <img src="images/weekly-activities/picture1.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+                <a class="category d-block mb-4" href="#">7th February, 2022</a>
+                <h2><a href="#">On the Locality of Grammatical Evolution</a></h2>
+            </div>
+            
+        </div> <!-- .item -->
+        <!-- Row 2 Tab 2-->
+        <div class="media-29101 d-md-flex w-100">
+          
+        </div> <!-- .item -->
+
+        
+
+      </div>
+      
     </div>
   </div>
 
-  <!-- Top News Start-->
-          <div class="top-news">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6 tn-left">
-                          <div class="row tn-slider">
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a  href="">Integer hendrerit elit eget purus sodales maximus</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 tn-right">
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="tn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Top News End-->
 
-          <!-- Category News Start-->
-          <div class="cat-news">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <h2>Sports</h2>
-                          <div class="row cn-slider">
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <h2>Technology</h2>
-                          <div class="row cn-slider">
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Category News End-->
 
-          <!-- Category News Start-->
-          <div class="cat-news">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <h2>Business</h2>
-                          <div class="row cn-slider">
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <h2>Entertainment</h2>
-                          <div class="row cn-slider">
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="cn-img">
-                                      <img src="images/1.jpg" />
-                                      <div class="cn-title">
-                                          <a href="">Lorem ipsum dolor sit</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Category News End-->
 
-          <!-- Tab News Start-->
-          <div class="tab-news">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <ul class="nav nav-pills nav-justified">
-                              <li class="nav-item">
-                                  <a class="nav-link active" data-toggle="pill" href="#featured">Featured News</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" data-toggle="pill" href="#popular">Popular News</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" data-toggle="pill" href="#latest">Latest News</a>
-                              </li>
-                          </ul>
 
-                          <div class="tab-content">
-                              <div id="featured" class="container tab-pane active">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="popular" class="container tab-pane fade">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="latest" class="container tab-pane fade">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6">
-                          <ul class="nav nav-pills nav-justified">
-                              <li class="nav-item">
-                                  <a class="nav-link active" data-toggle="pill" href="#m-viewed">Most Viewed</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" data-toggle="pill" href="#m-read">Most Read</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" data-toggle="pill" href="#m-recent">Most Recent</a>
-                              </li>
-                          </ul>
-
-                          <div class="tab-content">
-                              <div id="m-viewed" class="container tab-pane active">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="m-read" class="container tab-pane fade">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="m-recent" class="container tab-pane fade">
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                                  <div class="tn-news">
-                                      <div class="tn-img">
-                                          <img src="images/1.jpg" />
-                                      </div>
-                                      <div class="tn-title">
-                                          <a href="">Lorem ipsum dolor sit amet</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Tab News Start-->
 
 <!-- Footer -->
 
@@ -592,14 +217,14 @@
     </div>
 </footer>
 
-<script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
-<script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
-<script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
+
 <script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
 <script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
+<script src="js/popper.min.js"></script>
 
 <!-- PAGE LEVEL SCRIPTS -->
-<script src="js/masonry.min.js.download" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/weekly-main.js"></script>
 
 </body>
 
