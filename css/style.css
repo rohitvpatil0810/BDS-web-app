@@ -243,3 +243,8 @@ p {
 .decline {
   cursor: pointer
 }
+/* Table */
+.thead-ulgreen{
+  background-color: #005844;
+  color: #fff;
+}
