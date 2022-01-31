@@ -25,7 +25,20 @@
     padding-bottom: 30px;
     background-color: #fff;
     height: 100%;
+	text-align: center;
   }
+  .abt-project{
+	  padding-left: 20px;
+	  padding-right: 20px;
+  }
+  .project-head{
+	  font-weight: 600;
+	  color: #989da0;
+	  font-family: 'Inter', sans-serif;
+	  font-size: 16px;
+	  margin-top: 30px;
+  }
+
 
   .news {
     text-decoration-color: #;
@@ -67,11 +80,21 @@
 }
 
   .hp-posts-cat {
-    margin-bottom: 13px;
     margin-top: 35px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
+    letter-spacing: 0.1rem;
+    display: block;
+    font-family: "Inter",sans-serif;
+    line-height: 1.2;
+  }
+  .hp-posts-place{
+	margin-bottom: 13px;
+	margin-top: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
     letter-spacing: 0.1rem;
     display: inline-block;
     font-family: "Inter",sans-serif;
