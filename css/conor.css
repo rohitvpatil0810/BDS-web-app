@@ -20,10 +20,14 @@ ul.social-network {
   .social-network a.icoGoogle:hover {
     background-color: #EA4335;
   }
+  .social-network a.icoTwitter:hover {
+    background-color: #00ACEE;
+  }
   
   .social-network a.icoFacebook:hover i,
   .social-network a.icoLinkedin:hover i,
-  .social-network a.icoGoogle:hover i {
+  .social-network a.icoGoogle:hover i,
+  .social-network a.icoTwitter:hover i {
     color: #fff;
   }
   
