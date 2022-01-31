@@ -67,18 +67,7 @@
         border-radius: 0 0 15px 15px;
         background-color: #ffffff;
     }
-    .single_advisor_profile .single_advisor_details_info::after {
-        -webkit-transition-duration: 500ms;
-        transition-duration: 500ms;
-        position: absolute;
-        z-index: 1;
-        width: 50px;
-        height: 3px;
-        background-color: #005844;
-        content: "";
-        top: 12px;
-        right: 30px;
-    }
+
     .single_advisor_profile .single_advisor_details_info h6 {
         margin-bottom: 0.25rem;
         -webkit-transition-duration: 500ms;
