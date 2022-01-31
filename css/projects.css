@@ -115,3 +115,40 @@
       margin-right: 0;
     }
   }
+
+
+   .jumbotron{
+       background-color:#003726 ;
+       margin-top:2rem
+   }
+
+   .name{
+     font-family: "Inter",sans-serif;
+   }
+
+   .social-network a {
+     background-color: #F9F9F9;
+   }
+
+   .desgn {
+     margin: 10px;
+   }
+
+   .aboutproject {
+     margin-bottom: 100px;
+     font-family: 'Inter', sans-serif;
+   }
+ .desgn{
+     font-family: "Saol",serif;
+     font-size: 2rem;
+     line-height: 1.3333333333;
+     font-weight: 400;
+ }
+ .hr{
+     height:1px;
+     width: 20%;
+     border-width:4px;
+     margin:auto;
+     border-color: rgb(255, 255, 255);
+     background-color: rgb(255, 255, 255);
+ }
