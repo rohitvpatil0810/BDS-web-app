@@ -11,8 +11,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   <!-- font-family: 'Inter', sans-serif; font-family: 'Cormorant Garamond', serif; font-family: 'Roboto Condensed', sans-serif;  -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
@@ -40,13 +39,13 @@
   <div class="container">
     <div class="header">
       <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
-      <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head" class="header-logo">
+      <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head"  class="header-logo">
     </div>
   </div>
 
 
-  <div class="nav-container">
-    <div class="topnav container" id="myTopnav">
+<div class="nav-container">
+  <div class="topnav container" id="myTopnav">
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -54,202 +53,145 @@
     <a href="index.html"></i>Home</a>
     <a href="members.html" class="anav">Members</a>
     <a href="projects.html" class="anav">Projects</a>
-    <a href="publications.html" class="anav">Publications</a>
+    <a href="" class="anav">Publications</a>
     <a href="alumni.html" class="anav">Alumni</a>
     <a href="activities.html" class="anav">Weekly Activities</a>
     <a class="active" href="interns.html" class="anav">Interns</a>
 
-    </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-
-      var resizeTimer;
-      $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          if ($(window).width() <= 1000) {
-            var x = document.getElementById("myTopnav");
-            x.classList.remove("container");
-          } else {
-            var x = document.getElementById("myTopnav");
-            x.classList.add("container");
-          }
-        }, 200);
-      });
-    </script>
   </div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
-  <!--Body Start-->
-  <section class="inbody">
+    var resizeTimer;
+    $(window).resize(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        if ( $(window).width() <= 1000) {
+          var x = document.getElementById("myTopnav");
+          x.classList.remove("container");
+        }
+        else{
+          var x = document.getElementById("myTopnav");
+          x.classList.add("container");
+        }
+      }, 200);
+    });
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="section-title" style="margin-bottom: 3rem;margin-top: 3rem;">Interns</h1>
+  </script>
+</div>
+
+<!--Body Start-->
+<section class="inbody">
+  
+  <div class="container">
+    <div class="container mt-md-5">
+      <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="images/interns/tanishq.jpg" alt="LunarXP Wins Space Innovator of the Year Award" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Tanishq More</span>
+            <span class="hp-posts-place">India</span>
+            <h4 class="project-head">Projects</h4>
+            <h4 class="mt-3 abt-project"><a href="#">Smart Traffic Management System</a></h4>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="images/interns/shreya.jpg" alt="New Spending Bill Expands Funding for Space Exploration" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Shreya Adgaonkar</span>
+            <span class="hp-posts-place">India</span>
+            <h4 class="project-head">Projects</h4>
+            <h4 class="mt-3 abt-project"><a href="#">Smart Traffic Management System</a></h4>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="images/interns/shruti.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Shruti Jain</span>
+            <span class="hp-posts-place">India</span>
+            <h4 class="project-head">Projects</h4>
+            <h4 class="mt-3 abt-project"><a href="#">Smart Traffic Management System</a></h4>
+          </div><!-- .image-block-inner -->
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+          <div class="image-block-inner">
+            <a class="mh-100" href="#">
+              <img src="images/interns/rutuja.jpg" alt="LunarXP Sets Target for First Mars Landing in 2030" class="img-responsive w-100"></a>
+            <span class="hp-posts-cat">Rutuja Lahoti</span>
+            <span class="hp-posts-place">India</span>
+            <h4 class="project-head">Projects</h4>
+            <h4 class="mt-3 abt-project"><a href="#">Smart Traffic Management System</a></h4>
+          </div><!-- .image-block-inner -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+  
+<!-- Footer -->
+
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 pt-5" id="logo">
+        <img src="images/ul-logo-white.png" alt="UL-logo" class="logo">
+      </div>
+      <div class="col-sm-3 pt-5">
+        <div class="foot-list-title">
+          <h4>Contact Us</h4>
+        </div>
+
+          <span>University of Limerick, Limerick, V94 T9PX, Ireland</span>
+        </p>
+        <div class="footericons">
+          <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/bds_unilimerick"><i class="social-icon fab fa-twitter"></i></a>
+          <a href=""><i class="social-icon fab fa-instagram"></i></a>
+          <a href=""><i class="social-icon fas fa-envelope"></i></a>
+        </div>
       </div>
 
-      <div class="row">
-        <!-- Single Advisor-->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-            <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="single_advisor_details_info">
-              <h6>Samantha Sarah</h6>
-              <p class="designation">Founder &amp; CEO</p>
-            </div>
-          </div>
+      <div class="col-sm-3 pt-5">
+        <div class="foot-list-title">
+          <h4>Useful Links</h4>
         </div>
-        <!-- Single Advisor-->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="single_advisor_details_info">
-              <h6>Nazrul Islam</h6>
-              <p class="designation">UI Designer</p>
-            </div>
-          </div>
-        </div>
-        <!-- Single Advisor-->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-            <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="single_advisor_details_info">
-              <h6>Riyadh Khan</h6>
-              <p class="designation">Developer</p>
-            </div>
-          </div>
-        </div>
-        <!-- Single Advisor-->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-            <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
-              <!-- Social Info-->
-              <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-            </div>
-            <!-- Team Details-->
-            <div class="single_advisor_details_info">
-              <h6>Niloy Islam</h6>
-              <p class="designation">Marketing Manager</p>
-            </div>
-          </div>
-        </div>
+        <h6><a href="http://hive.csis.ul.ie/mediawiki/images/1/10/BDS_Lero_PPT_Template_Plain_2020.pptx" target="_blank">BDS PPT Template</a></h6>
+        <h6><a href="http://hive.csis.ul.ie/mediawiki/index.php/Form:Paper_Review_Form" target="_blank">Discussion Paper Review Form</a></h6>
+        
       </div>
     </div>
-  </section>
 
-  <!--2-->
-  <section class="container">
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="images\interns\tanishq.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+    <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
+
+    <div class="row">
+      <div class="col-sm-8">
+        <p>© Copyright 2022 BDS</p>
       </div>
+
     </div>
+  </div>
+</footer>
 
+<script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
+<script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
+<script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
+<script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
+<script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
 
-      <div class="card mb-3">
-      <img src="images\interns\tanishq.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      <img src="images\interns\tanishq.jpg" class="card-img-bottom" alt="...">
-    </div>
+<!-- PAGE LEVEL SCRIPTS -->
+<script src="js/masonry.min.js.download" type="text/javascript"></script>
 
-  </section>
+</body>
 
-
-  <!-- Footer -->
-
-  <footer id="footer">
-   <div class="container-fluid">
-     <div class="row">
-       <div class="col-sm-6 pt-5" id="logo">
-         <img src="images/ul-logo-white.png" alt="UL-logo" class="logo">
-       </div>
-       <div class="col-sm-3 pt-5">
-         <div class="foot-list-title">
-           <h4>Contact Us</h4>
-         </div>
-
-           <span>University of Limerick, Limerick, V94 T9PX, Ireland</span>
-         </p>
-         <div class="footericons">
-           <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
-           <a href="https://twitter.com/bds_unilimerick"><i class="social-icon fab fa-twitter"></i></a>
-           <a href=""><i class="social-icon fab fa-instagram"></i></a>
-           <a href=""><i class="social-icon fas fa-envelope"></i></a>
-         </div>
-       </div>
-
-       <div class="col-sm-3 pt-5">
-         <div class="foot-list-title">
-           <h4>Useful Links</h4>
-         </div>
-         <h6><a href="http://hive.csis.ul.ie/mediawiki/images/1/10/BDS_Lero_PPT_Template_Plain_2020.pptx" target="_blank">BDS PPT Template</a></h6>
-         <h6><a href="http://hive.csis.ul.ie/mediawiki/index.php/Form:Paper_Review_Form" target="_blank">Discussion Paper Review Form</a></h6>
-
-       </div>
-     </div>
-
-     <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
-
-     <div class="row">
-       <div class="col-sm-8">
-         <p>© Copyright 2022 BDS</p>
-       </div>
-
-     </div>
-   </div>
- </footer>
-
-   <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
-   <script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
-   <script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
-   <script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
-   <script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
-
-   <!-- PAGE LEVEL SCRIPTS -->
-   <script src="js/masonry.min.js.download" type="text/javascript"></script>
-
- </body>
-
- </html>
+</html>

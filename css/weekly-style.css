@@ -73,7 +73,10 @@ h2 {
 .media-29101 .img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%; }
+  flex: 0 0 50%;
+  align-content: center;
+  display: grid;
+}
 
 .media-29101 .text {
   padding: 50px; }
