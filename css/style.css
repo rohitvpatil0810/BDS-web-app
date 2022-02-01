@@ -24,7 +24,7 @@ h1, h2{
 }
 .jumbotron{
   background-color:#003726 ;
-  margin-top:2rem
+  margin: top 0rem;
 }
 .top-section{
   margin-top: 4rem;

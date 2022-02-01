@@ -29,7 +29,7 @@
   }
 
   .news {
-    text-decoration-color: #;
+    text-decoration-color: none;
   }
 
   a {
@@ -128,12 +128,6 @@
       margin-right: 0;
     }
   }
-
-
-   .jumbotron{
-       background-color:#003726 ;
-       margin-top:2rem
-   }
 
    .name{
      font-family: "Inter",sans-serif;
