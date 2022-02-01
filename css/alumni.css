@@ -18,6 +18,10 @@
         background-color: #04AA6D;
         overflow: hidden;
     }
+    .single_advisor_profile .advisor_thumb img{
+        width: 315px;
+        height: auto;
+    }
     .single_advisor_profile .advisor_thumb::after {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
