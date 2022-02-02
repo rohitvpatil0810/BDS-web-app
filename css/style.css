@@ -172,7 +172,11 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
- 
+.img-200{
+  height: 200px;
+  width: 200px;
+}
+
 /* Grid section */
 #Grid {
   padding: 100px;
