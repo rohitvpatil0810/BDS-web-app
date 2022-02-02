@@ -374,3 +374,20 @@ section {
 		display: none;
 	}
 }
+
+.hrfac {
+	height:1px;
+    width: 30%;
+    border-width:4px;
+    margin:auto;
+    border-color: #003726;
+    background-color: #003726;
+}
+
+.hrsec {
+	padding-bottom: 50px;
+}
+
+.inbody{
+	background-color:#F7F7F7 ;
+}
