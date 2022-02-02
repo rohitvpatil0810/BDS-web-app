@@ -162,7 +162,8 @@ p {
 .sponsor-box{
   position: relative;
   height: 200px;
-  margin-top:20px ;
+  margin-top:20px;
+  border: 2px solid black;
 }
 .press-logos {
   width: 150px;
