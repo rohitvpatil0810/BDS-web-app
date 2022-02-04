@@ -119,3 +119,28 @@
   .footericons a{
     color: white;
   }
+  .footer-credits{
+    word-spacing:-0.5pt;
+    float: right;
+  }
+  .footer-credits a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0 0.4rem ;
+
+  }
+  .footer-credits a:hover{
+    text-decoration: none;
+    color: inherit;
+    margin: 0 0.4rem ;
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    .credit-name{
+      display: block;
+    }
+    .footer-credits{
+      float: none;
+    }
+  }
