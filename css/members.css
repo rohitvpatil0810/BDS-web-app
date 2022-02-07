@@ -127,22 +127,22 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 
 .btn.btn-ulgreen {
-	background: #04AA6D;
+	background: #005844;
 }
 
 .btn.btn-ulgreen:hover {
-	background: #04AA6D;
+	background: #005844;
 }
 
 .btn.btn-ulgreen-fill {
-	color: #04AA6D;
-	border-color: #04AA6D;
+	color: #005844;
+	border-color: #005844;
 	background: transparent;
 }
 
 .btn.btn-ulgreen-fill:hover {
 	color: white;
-	background: #04AA6D;
+	background: #005844;
 }
 
 .btn.btn-white-fill {
@@ -226,7 +226,7 @@ section {
 	margin: 100px 0;
 	padding-bottom: 60px;
 	background: white;
-	box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 3px 8px #04AA6D;
 }
 
 .team .cover .overlay {
@@ -317,7 +317,7 @@ section {
 }
 
 .gray-bg {
-	background: #f7f7f7;
+	background: #f7f4f1;
 }
 
 .blue {
