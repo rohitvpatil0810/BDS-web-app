@@ -49,7 +49,25 @@
   .topnav .icon {
     display: none;
   }
-  
+  /*Dropdown*/
+  .sub-menu{
+    display: none;
+  }
+  .topnav .intern-menu:hover .sub-menu{
+    display: block;
+    position: absolute;;
+    background-color: #005844;
+    top: 47.9px;
+  }
+
+  .topnav .intern-menu:hover .sub-menu ul{
+    display: block;
+    list-style: none;
+  }
+  .submenu-links{
+    background-color: #005844;
+    
+  }
   
   @media screen and (max-width: 1000px) {
     .topnav a:not(:first-child) {display: none;}
