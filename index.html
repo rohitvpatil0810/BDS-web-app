@@ -43,6 +43,10 @@
     .carousel-image {
       min-height: 40vh;
     }
+    /*For Nav Sub Mene// Caution*/
+    .topnav{
+      overflow:visible;
+    }
   </style>
 
 </head>
@@ -93,7 +97,20 @@
       <a href="publications.html" class="anav">Publications</a>
       <a href="alumni.html" class="anav">Alumni</a>
       <a href="activities.html" class="anav">Weekly Activities</a>
-      <a href="interns.html" class="anav">Interns</a>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a href="interns.html" class="anav menu-drop">Interns</a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="#" class="submenu-links">On-Site</a></li>
+            <li><a href="#" class="submenu-links">Remote</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
 
   <!--<i class="fa fa-caret-down"></i>-->
 
@@ -173,7 +190,7 @@
             The Biocomputing and Development Systems Group at the University of Limerick is a multi-disciplinary group that works with cutting edge Artificial Intelligence and Machine Learning tools. We are based in the Computer Science and
             Information Systems (CSIS) Department in UL and are part of Lero, the Irish Software Engineering Research Institute. The BDS is led by Prof. Conor Ryan, who invented the popular Grammatical Evolution system in 1998, along with two of his
             PhD students.
-          <p>Since its establishment, with international partners from industries, academia, and research bodies, BDS has been able to secure funds to the tune of 57 Million €.</p>
+          <p>Since its establishment, with international partners from industries, academia, and research bodies, BDS has been able to secure funds to the tune of €57 Million.</p>
           </p>
         </div>
         <div class="col-sm-6">
@@ -217,7 +234,7 @@
     </div>
   </div>
   <div class="container mid-section">
-    <h1 class="section-title">Our Sponsers</h1>
+    <h1 class="section-title">Our Sponsors</h1>
 
     <div class="row">
       <div class="col-sm-4 ml-auto"><img class="img-200" src="images/lero-logo1.png" alt="tc-logo"></div>
