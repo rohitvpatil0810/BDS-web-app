@@ -79,6 +79,7 @@ h1, h2{
   opacity: 1;
 }
 
+/* Dropdown*/
 
 
 /* Unsorted*/
@@ -175,7 +176,7 @@ p {
 .img-200{
   height: 200px;
   width: 200px;
-  margin: auto;    
+  margin: auto;
   display: block;
 }
 
