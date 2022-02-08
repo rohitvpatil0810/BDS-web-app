@@ -34,6 +34,12 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/interns.css">
 
+  <style>
+      .topnav{
+      overflow:visible;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -59,7 +65,15 @@
     <a href="publications.html" class="anav">Publications</a>
     <a href="alumni.html" class="anav">Alumni</a>
     <a href="activities.html" class="anav">Weekly Activities</a>
-    <a class="active" href="interns.html" class="anav">Interns</a>
+    <div style="display: inline-grid;" class="intern-menu">
+      <a href="interns.html" class="anav menu-drop active">Interns</a>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="#" class="submenu-links">On-Site</a></li>
+          <li><a href="#" class="submenu-links">Remote</a></li>
+        </ul>
+      </div> 
+    </div>
 
   </div>
 <script>

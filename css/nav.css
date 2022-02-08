@@ -63,11 +63,40 @@
   .topnav .intern-menu:hover .sub-menu ul{
     display: block;
     list-style: none;
+    padding: 10px;
+  }
+  .sub-menu li:hover{
+    background-color: #ddd;
   }
   .submenu-links{
     background-color: #005844;
+    float: none;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.7rem 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1pt;
     
   }
+  .submenu-links{
+    background-color: #005844;
+    float: none;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.7rem 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    
+  }
+
   
   @media screen and (max-width: 1000px) {
     .topnav a:not(:first-child) {display: none;}
