@@ -7,8 +7,9 @@
   
 }
   .topnav {
-    overflow: hidden;
+    overflow: visible;
     background-color: #005844;
+    height: 47.9px;
   }
   .nav-container{
     background-color: #005844;
@@ -52,6 +53,7 @@
   /*Dropdown*/
   .sub-menu{
     display: none;
+    align-content: center;
   }
   .topnav .intern-menu:hover .sub-menu{
     display: block;
@@ -146,8 +148,6 @@
   }
   #footer p{
     line-height: 2;
-    font-weight: 400;
-    font-size: 1rem;
   }
 
   
@@ -169,19 +169,24 @@
   .footer-credits{
     word-spacing:-0.5pt;
     float: right;
+    font-size: 0.9rem;
+    
   }
   .footer-credits a{
     text-decoration: none;
     color: inherit;
-    margin: 0 0.4rem ;
+    padding: 0 0.6rem ;
 
   }
   .footer-credits a:hover{
     text-decoration: none;
     color: inherit;
-    margin: 0 0.4rem ;
+
+    
+  
     color: white;
   }
+
 
   @media screen and (max-width: 600px) {
     .credit-name{
