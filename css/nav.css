@@ -146,8 +146,6 @@
   }
   #footer p{
     line-height: 2;
-    font-weight: 400;
-    font-size: 1rem;
   }
 
   
@@ -169,11 +167,13 @@
   .footer-credits{
     word-spacing:-0.5pt;
     float: right;
+    font-size: 0.9rem;
   }
   .footer-credits a{
     text-decoration: none;
     color: inherit;
     margin: 0 0.4rem ;
+    
 
   }
   .footer-credits a:hover{
