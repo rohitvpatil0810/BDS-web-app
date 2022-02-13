@@ -55,6 +55,9 @@
     display: none;
     align-content: center;
   }
+  .intern-menu{
+    display: inline-grid;
+  }
   .topnav .intern-menu:hover .sub-menu{
     display: block;
     position: absolute;;
@@ -107,6 +110,14 @@
       display: block;
     }
   }
+  @media screen and (max-width: 1000px) {
+    .topnav {
+      overflow: hidden;
+      background-color: #005844;
+      height: auto;
+    }
+  }
+
   
   @media screen and (max-width: 1000px) {
     .topnav.responsive {position: sticky;}
