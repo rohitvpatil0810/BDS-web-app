@@ -46,49 +46,73 @@
     </div>
   </div>
 
+  <div class="nav-container">
+    <div class="topnav container" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html">Home</a>
 
-<div class="nav-container">
-  <div class="topnav container" id="myTopnav">
+      <div style="display: inline-grid;" class="intern-menu">
+        <a  href="members.html" class="anav">Members</a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="members.html" class="submenu-links">Current</a></li>
+            <li><a href="pastmembers.html" class="submenu-links">Past</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a  href="projects.html" class="anav">Projects</a>
+      </div>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a href="publications.html" class="anav">Publications</a>
+      </div>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a  href="alumni.html" class="anav">Alumni</a>
+      </div>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a href="activities.html" class="anav">Weekly Activities</a>
+      </div>
+      <div style="display: inline-grid;" class="intern-menu">
+        <a class="active" href="interns.html" class="anav menu-drop">Interns</a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="interns.html" class="submenu-links">On-Site</a></li>
+            <li><a href="RemoteInterns.html" class="submenu-links">Remote</a></li>
+          </ul>
+        </div>
+      </div>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html"></i>Home</a>
-    <a href="members.html" class="anav">Members</a>
-    <a href="projects.html" class="anav">Projects</a>
-    <a href="publications.html" class="anav">Publications</a>
-    <a href="alumni.html" class="anav">Alumni</a>
-    <a href="activities.html" class="anav">Weekly Activities</a>
-    <a class="active" href="interns.html" class="anav">Interns</a>
+  <!--<i class="fa fa-caret-down"></i>-->
 
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+
+      var resizeTimer;
+      $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          if ($(window).width() <= 1000) {
+            var x = document.getElementById("myTopnav");
+            x.classList.remove("container");
+          } else {
+            var x = document.getElementById("myTopnav");
+            x.classList.add("container");
+          }
+        }, 200);
+      });
+    </script>
   </div>
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-    var resizeTimer;
-    $(window).resize(function() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function() {
-        if ( $(window).width() <= 1000) {
-          var x = document.getElementById("myTopnav");
-          x.classList.remove("container");
-        }
-        else{
-          var x = document.getElementById("myTopnav");
-          x.classList.add("container");
-        }
-      }, 200);
-    });
-
-  </script>
-</div>
 
 <!--Body Start-->
 <section class="inbody">
@@ -104,7 +128,7 @@
         <table class="table table-striped table-bordered mydatatable" style="width: 100%" id="mydatatable">
           <thead class="thead-ulgreen">
           <tr>
-            
+
             <th>Name</th>
             <th>Country</th>
             <th>Affiliation</th>
@@ -112,25 +136,25 @@
         </thead>
         <tbody>
           <tr>
-            
+
             <td>Shravani Rajguru</td>
             <td>India</td>
             <td>Bachelor’s in Computer Science and Engineering</td>
           </tr>
           <tr>
-            
+
             <td>Nishanth Shanmugam</td>
             <td>India</td>
             <td>Masters in Computer Science and Engineering</td>
           </tr>
           <tr>
-            
+
             <td>Hrushabh Kale</td>
             <td>India</td>
             <td>Bachelor’s  in Computer Science and Engineering</td>
           </tr>
           <tr>
-            
+
             <td>Pruthviraj Jadhav</td>
             <td>India</td>
             <td>Bachelor’s  in Computer Science and Engineering</td>

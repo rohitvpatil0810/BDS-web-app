@@ -24,7 +24,7 @@
 
 	<!-- Font Awsome -->
 	<script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
-	
+
 
 	<!-- Normalize -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -51,50 +51,76 @@
 
 
 
-	<div class="nav-container">
-	<div class="topnav container" id="myTopnav">
+	  <div class="nav-container">
+	    <div class="topnav container" id="myTopnav">
+	      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	        <i class="fa fa-bars"></i>
+	      </a>
+	      <a  href="index.html">Home</a>
 
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"></i>
-		</a>
-		<a href="index.html">Home</a>
-		<a class="active" href="members.html" class="anav">Members</a>
-		<a href="projects.html" class="anav">Projects</a>
-		<a href="publications.html" class="anav">Publications</a>
-		<a href="alumni.html" class="anav">Alumni</a>
-		<a href="activities.html" class="anav">Weekly Activities</a>
-		<a href="interns.html" class="anav">Interns</a>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a  class="active" href="members.html" class="anav">Members</a>
+	        <div class="sub-menu">
+	          <ul>
+	            <li><a href="members.html" class="submenu-links">Current</a></li>
+	            <li><a href="pastmembers.html" class="submenu-links">Past</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a href="projects.html" class="anav">Projects</a>
+	      </div>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a href="publications.html" class="anav">Publications</a>
+	      </div>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a href="alumni.html" class="anav">Alumni</a>
+	      </div>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a href="activities.html" class="anav">Weekly Activities</a>
+	      </div>
+	      <div style="display: inline-grid;" class="intern-menu">
+	        <a href="interns.html" class="anav menu-drop">Interns</a>
+	        <div class="sub-menu">
+	          <ul>
+	            <li><a href="interns.html" class="submenu-links">On-Site</a></li>
+	            <li><a href="RemoteInterns.html" class="submenu-links">Remote</a></li>
+	          </ul>
+	        </div>
+	      </div>
 
-	</div>
-	<script>
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-		x.className += " responsive";
-		} else {
-		x.className = "topnav";
-		}
-	}
+	  <!--<i class="fa fa-caret-down"></i>-->
+
+	    </div>
+	    <script>
+	      function myFunction() {
+	        var x = document.getElementById("myTopnav");
+	        if (x.className === "topnav") {
+	          x.className += " responsive";
+	        } else {
+	          x.className = "topnav";
+	        }
+	      }
 
 
-		var resizeTimer;
-		$(window).resize(function() {
-		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(function() {
-			if ( $(window).width() <= 1000) {
-			var x = document.getElementById("myTopnav");
-			x.classList.remove("container");
-			}
-			else{
-			var x = document.getElementById("myTopnav");
-			x.classList.add("container");
-			}
-		}, 200);
-		});
-
-	</script>
-	</div>
+	      var resizeTimer;
+	      $(window).resize(function() {
+	        clearTimeout(resizeTimer);
+	        resizeTimer = setTimeout(function() {
+	          if ($(window).width() <= 1000) {
+	            var x = document.getElementById("myTopnav");
+	            x.classList.remove("container");
+	          } else {
+	            var x = document.getElementById("myTopnav");
+	            x.classList.add("container");
+	          }
+	        }, 200);
+	      });
+	    </script>
+	  </div>
 <!--HEADER END-->
+
+
 <!--Body Start-->
 <section class="inbody">
 	<div class="jumbotron jumbotron-fluid">
