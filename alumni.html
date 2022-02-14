@@ -24,7 +24,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- Font Awsome -->
-
+  <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -101,10 +101,21 @@
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
           x.className += " responsive";
+          var elems = document.getElementsByClassName('intern-menu');
+          for (var i=0;i<elems.length;i+=1){
+            elems[i].style.display = 'block';
+          }
         } else {
           x.className = "topnav";
+          var elems = document.getElementsByClassName('intern-menu');
+          for (var i=0;i<elems.length;i+=1){
+            elems[i].style.display = 'none';
+          }
+          
+          
         }
       }
+
 
 
       var resizeTimer;

@@ -106,13 +106,23 @@
 	    </div>
 	    <script>
 	      function myFunction() {
-	        var x = document.getElementById("myTopnav");
-	        if (x.className === "topnav") {
-	          x.className += " responsive";
-	        } else {
-	          x.className = "topnav";
-	        }
-	      }
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          var elems = document.getElementsByClassName('intern-menu');
+          for (var i=0;i<elems.length;i+=1){
+            elems[i].style.display = 'block';
+          }
+        } else {
+          x.className = "topnav";
+          var elems = document.getElementsByClassName('intern-menu');
+          for (var i=0;i<elems.length;i+=1){
+            elems[i].style.display = 'none';
+          }
+          
+          
+        }
+      }
 
 
 	      var resizeTimer;
