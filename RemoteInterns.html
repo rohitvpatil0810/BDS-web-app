@@ -33,6 +33,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/interns.css">
+  <script>
+    $(document).ready(function() {
+      var w =$(window).width();
+      if(w <= 1000){
+        var elems = document.getElementsByClassName('intern-menu');
+        for (var i=0;i<elems.length;i+=1){
+        elems[i].style.display = 'none';
+      }
+      }
+     
+    });
+
+  </script>
 
 </head>
 

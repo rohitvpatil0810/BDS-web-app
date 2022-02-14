@@ -131,6 +131,9 @@
       display: block;
       text-align: left;
     }
+    .responsive .intern-menu{
+      display: block;
+    }
   }
   .header-logo {
     width: 170px;
