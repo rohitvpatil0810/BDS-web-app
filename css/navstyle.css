@@ -1,0 +1,45 @@
+@media screen and (min-width : 1000px) {
+    nav{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 500;
+    }
+    .navbar-design{
+        padding: 0;
+    
+    }
+    nav.navbar ul li.nav-item{
+        padding: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding: 0.7rem 16px;
+        color: white;
+        font-size: 17px;
+        letter-spacing: 1pt;
+    }
+    .navbar-expand-md .navbar-nav .nav-link:hover{
+        background-color: #04AA6D;
+    }
+    .navbar-design{
+        padding: 0;
+    
+    }
+    .navbar .nav-item .dropdown-menu{
+        border-radius: 0px;
+        border-top-width: 3px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-color: #950470;
+    }
+
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+
+}
+
+.navbar-design{
+    background-color: #005844;
+
+}
+
+

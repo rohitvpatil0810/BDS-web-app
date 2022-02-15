@@ -22,18 +22,11 @@
   <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrp scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <!-- Font Awsome -->
-  <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/navstyle.css">
   <style>
     .carousel-item {
       max-height: 79vh;
@@ -49,124 +42,16 @@
 <body>
 
   <!-- Cookies -->
-  <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog " role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="notice d-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-center mt-5">
-              <div class="card p-3 cookie"><span>We use third party cookies to personalize content, ads and analyze site traffic.<br></span><a href="#">Learn more<i class="fa fa-angle-right ml-2"></i></a>
-                <div class="mt-4 text-right"><span class="mr-3 decline">Decline</span><button class="btn btn-light btn-sm" data-dismiss="modal" type="button">Allow cookies</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="alert alert-warning alert-dismissible fade show fixed-bottom alert-design" role="alert">
+    <strong>Notice. </strong>We use cookies to provide necessary website functionality, improve your experience and analyze our traffic. By using our website, you agree to our Privacy Policy and our cookies usage.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
-  <script>
-    $(document).ready(function() {
-      $('#cookieModal').modal('show');
-      var w =$(window).width();
-      if(w <= 1000){
-        var elems = document.getElementsByClassName('intern-menu');
-        for (var i=0;i<elems.length;i+=1){
-        elems[i].style.display = 'none';
-      }
-      }
-     
-    });
 
-  </script>
 
   <!-- HEADER  -->
-  <div class="container">
-    <div class="header">
-      <img src="images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
-      <img src="images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head" class="header-logo">
-    </div>
-  </div>
-
-
-
-  <div class="nav-container">
-    <div class="topnav container" id="myTopnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a class="active" href="index.html">Home</a>
-      
-      <div id="intern-menu" class="intern-menu">
-        <a href="members.html" class="anav">Members</a>
-        <div class="sub-menu">
-          <ul>
-            <li><a href="members.html" class="submenu-links">Current</a></li>
-            <li><a href="pastmembers.html" class="submenu-links">Past</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="intern-menu">
-        <a href="projects.html" class="anav">Projects</a>
-      </div>
-      <div  class="intern-menu">
-        <a href="publications.html" class="anav">Publications</a>
-      </div>
-      <div  class="intern-menu">
-        <a href="alumni.html" class="anav">Alumni</a>
-      </div>
-      <div class="intern-menu">
-        <a href="activities.html" class="anav">Weekly Activities</a>
-      </div>
-      <div class="intern-menu">
-        <a href="interns.html" class="anav">Interns</a>
-        <div class="sub-menu">
-          <ul>
-            <li><a href="interns.html" class="submenu-links">On-Site</a></li>
-            <li><a href="RemoteInterns.html" class="submenu-links">Remote</a></li>
-          </ul>
-        </div>
-      </div>
-
-  <!--<i class="fa fa-caret-down"></i>-->
-
-    </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-          var elems = document.getElementsByClassName('intern-menu');
-          for (var i=0;i<elems.length;i+=1){
-            elems[i].style.display = 'block';
-          }
-        } else {
-          x.className = "topnav";
-          var elems = document.getElementsByClassName('intern-menu');
-          for (var i=0;i<elems.length;i+=1){
-            elems[i].style.display = 'none';
-          }
-          
-          
-        }
-      }
-
-
-      var resizeTimer;
-      var resizeTimer1;
-      $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          if ($(window).width() <= 1000) {
-            var x = document.getElementById("myTopnav");
-            x.classList.remove("container");
-          } else {
-            var x = document.getElementById("myTopnav");
-            x.classList.add("container");
-          }
-        }, 200);
-      });
-    </script>
-  </div>
+  <div id="header-nav"></div>
 
 
   <!--Body Start-->
@@ -276,65 +161,30 @@
   </section>
 
   <!-- Footer -->
+  <div id="footer-main"></div>
 
-  <footer id="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 pt-5" id="logo">
-          <img src="images/ul-logo-white.png" alt="UL-logo" class="logo">
-        </div>
-        <div class="col-sm-3 pt-5">
-          <div class="foot-list-title">
-            <h4>Contact Us</h4>
-          </div>
 
-          <span>University of Limerick, Limerick, V94 T9PX, Ireland</span>
-          </p>
-          <div class="footericons">
-            <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/bds_unilimerick"><i class="social-icon fab fa-twitter"></i></a>
-            <a href=""><i class="social-icon fab fa-instagram"></i></a>
-            <a href=""><i class="social-icon fas fa-envelope"></i></a>
-          </div>
-        </div>
 
-        <div class="col-sm-3 pt-5">
-          <div class="foot-list-title">
-            <h4>Useful Links</h4>
-          </div>
-          <h6><a href="https://docs.google.com/presentation/d/1n2WfDjOsKDVhR7iOhAB2k0Hwb8mmAbLV/edit?usp=sharing&ouid=105760799215780272196&rtpof=true&sd=true" target="_blank">BDS PPT Template</a></h6>
-          <h6><a href="https://drive.google.com/file/d/1fRavUXpfOo-oogrDlsKESlov2zMHVMzE/view?usp=sharing" target="_blank">Discussion Paper Review Form</a></h6>
 
-        </div>
-      </div>
 
-      <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
+  <!-- Bootstrap JQuery Popper scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-      <div class="row">
-        <div class="col-sm-4">
-          <p>© Copyright 2022 BDS</p>
-        </div>
-        <div class="col-sm-8">
-          <span class="footer-credits">
-            <p>Created by: <span class="credit-name"><a href="https://www.linkedin.com/in/rahul-bhat-087463197/">Rahul </a></span>
-              <span class="credit-name"><a href="https://www.linkedin.com/in/arya-karemore-02a4111a6/">Arya </a></span>
-              <span class="credit-name"><a href="https://www.linkedin.com/in/pankaj-choudhary-04512070/">Pankaj</a></span>
-              <span class="credit-name"><a href="https://www.linkedin.com/in/parvinderkaur-sodhi-682245206/">Parvinderkaur</a></span> </p>
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
-  <script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
-  <script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
-  <script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
-  <script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
+<!-- PAGE LEVEL SCRIPTS -->
+    <!-- FontAwsome JS -->  
+    <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+  $("#header-nav").load('header.html');
+  $("#footer-main").load('footer.html');
 
-  <!-- PAGE LEVEL SCRIPTS -->
-  <script src="js/masonry.min.js.download" type="text/javascript"></script>
+  });
+
+  </script>
+
 
 </body>
-
 </html>

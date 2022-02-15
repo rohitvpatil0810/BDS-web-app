@@ -83,6 +83,12 @@ h1, h2{
 
 
 /* Unsorted*/
+.alert-design{
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+
 
 p {
   color: #afafaf;
