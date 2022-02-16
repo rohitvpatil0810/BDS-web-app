@@ -98,6 +98,11 @@ ul.social-network {
     margin-bottom: 100px;
     font-family: 'Inter', sans-serif;
   }
+  .aboutmember{
+    margin-bottom: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+  }
 .desgn{
     font-family: "Saol",serif;
     font-size: 2rem;
@@ -111,4 +116,9 @@ ul.social-network {
     margin:auto;
     border-color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
+}
+.member-avatar{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }

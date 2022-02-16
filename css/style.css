@@ -87,8 +87,23 @@ h1, h2{
   border-radius: 0px;
   margin-bottom: 0px;
 }
-
-
+.highlighted-text{
+  -webkit-transition: -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-box-shadow: inset 0 -0.15em #950470;
+box-shadow: inset 0 -0.15em #950470;
+color: rgba(224, 224, 224, 0.986);
+}
+.highlighted-text:hover{
+  -webkit-transition: -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-box-shadow: inset 0 -0.15em #950471c0;
+box-shadow: inset 0 -0.40em #950471c0;
+}
 
 p {
   color: #afafaf;
