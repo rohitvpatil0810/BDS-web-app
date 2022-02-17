@@ -1,9 +1,4 @@
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
 
 .C{
    vertical-align: middle;
@@ -30,21 +25,6 @@
 
   .news {
     text-decoration-color: none;
-  }
-
-  a {
-    color: #989da0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  h2 {
-    text-transform: uppercase;
-  }
-
-  a:hover {
-    text-decoration: none;
   }
 
   .image-block li>.image-block-inner>a {
@@ -93,9 +73,6 @@
     font-weight: 600;
   }
 
-.funders{
-
-}
 
   /* Media Queries */
 
