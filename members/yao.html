@@ -22,18 +22,13 @@
   <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrp scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
   <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/masonry.css">
+  <link rel="stylesheet" href="../css/navstyle.css">
   <link rel="stylesheet" href="../css/conor.css">
 
 </head>
@@ -41,56 +36,9 @@
 <body>
 
   <!-- HEADER  -->
-  <div class="container">
-    <div class="header">
-      <img src="../images/logo-bds-black.png" alt="bds-logo" id="bds-logo-head" class="header-logo">
-      <img src="../images/ul-master-green.jpg" alt="ul-logo" id="ul-logo-head" class="header-logo">
-    </div>
-  </div>
+  <div id="header-nav"></div>
 
-
-
-  <div class="nav-container">
-    <div class="topnav container" id="myTopnav">
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a class="anav" href="../index.html">Home</a>
-      <a href="../members.html" class="active">Members</a>
-      <a href="../projects.html" class="anav">Projects</a>
-      <a href="../publications.html" class="anav">Publications</a>
-      <a href="../alumni.html" class="anav">Alumni</a>
-      <a href="../activities.html" class="anav">Weekly Activities</a>
-      <a href="../interns.html" class="anav">Interns</a>
-
-    </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-
-
-      var resizeTimer;
-      $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          if ($(window).width() <= 1000) {
-            var x = document.getElementById("myTopnav");
-            x.classList.remove("container");
-          } else {
-            var x = document.getElementById("myTopnav");
-            x.classList.add("container");
-          }
-        }, 200);
-      });
-    </script>
-  </div>
+  <!--Main Body-->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="name text-center text-white">Yao Yao</h1> 
@@ -119,56 +67,23 @@
 
 <!-- Footer -->
 
-<footer id="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6 pt-5" id="logo">
-        <img src="../images/ul-logo-white.png" alt="UL-logo" class="logo">
-      </div>
-      <div class="col-sm-3 pt-5">
-        <div class="foot-list-title">
-          <h4>Contact Us</h4>
-        </div>
+<div id="footer-main"></div>
 
-          <span>University of Limerick, Limerick, V94 T9PX, Ireland</span>
-        </p>
-        <div class="footericons">
-          <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/bds_unilimerick" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
-          <a href=""><i class="social-icon fab fa-instagram"></i></a>
-          <a href=""><i class="social-icon fas fa-envelope"></i></a>
-        </div>
-      </div>
-
-      <div class="col-sm-3 pt-5">
-        <div class="foot-list-title">
-          <h4>Useful Links</h4>
-        </div>
-        <h6><a href="http://hive.csis.ul.ie/mediawiki/images/1/10/BDS_Lero_PPT_Template_Plain_2020.pptx" target="_blank">BDS PPT Template</a></h6>
-        <h6><a href="http://hive.csis.ul.ie/mediawiki/index.php/Form:Paper_Review_Form" target="_blank">Discussion Paper Review Form</a></h6>
-        
-      </div>
-    </div>
-
-    <hr style="height:1px; border-width:0; color:#fff; background-color:#fff">
-
-    <div class="row">
-      <div class="col-sm-8">
-        <p>© Copyright 2022 BDS</p>
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-<script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
-<script src="./index_files/jquery-migrate.min.js.download" type="text/javascript"></script>
-<script src="./index_files/bootstrap.min.js.download" type="text/javascript"></script>
-<script src="js/jquery.masonry.pkgd.min.js.download" type="text/javascript"></script>
-<script src="js/imagesloaded.pkgd.min.js.download" type="text/javascript"></script>
-
+ <!-- Bootstrap JQuery Popper scripts -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- PAGE LEVEL SCRIPTS -->
-<script src="js/masonry.min.js.download" type="text/javascript"></script>
+  <!-- FontAwsome JS -->  
+  <script src="https://kit.fontawesome.com/f3ca79e6ea.js" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+  $("#header-nav").load('head.html');
+  $("#footer-main").load('foot.html');
+
+  });
+
+  </script>
 
 </body>
 
