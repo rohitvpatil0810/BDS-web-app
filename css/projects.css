@@ -4,6 +4,21 @@
    vertical-align: middle;
     padding: 60px 0;
 }
+.image-block a {
+  color: #989da0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.image-block h2 {
+  text-transform: uppercase;
+}
+
+.image-block a:hover {
+  text-decoration: none;
+}
+
 
   .image-block {
     margin-top: 24px;
