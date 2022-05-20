@@ -84,7 +84,8 @@ const handleSubmit = async (e) => {
         setTimeout(() => {
           document.getElementById("submit-btn").innerText = "Submit";
           document.querySelector("#submit-btn").disabled = false;
-          window.location.href = "/activities.html";
+          window.location.href =
+            "https://rohitvpatil0810.github.io/BDS-web-app/activities.html";
         }, 1500);
       })
       .catch((error) => {
