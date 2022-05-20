@@ -42,6 +42,7 @@
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/workshopForm.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/navstyle.css" />
@@ -49,7 +50,6 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/weekly-animate.css" />
     <link rel="stylesheet" href="css/weekly-style.css" />
-    <link rel="stylesheet" href="/css/workshopForm.css" />
   </head>
 
   <body>
@@ -59,119 +59,39 @@
     <!--Body Start-->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="name text-center text-white">Weekly Activities</h1>
+        <h1 class="name text-center text-white">Fill Details of Workshop</h1>
         <hr class="hr" />
       </div>
     </div>
     <div class="content">
       <div class="container">
-        <div class="d-flex carousel-nav">
-          <a href="#" class="col active">Discussion Groups</a>
-          <a href="#" class="col">Workshops</a>
-        </div>
-
-        <div class="owl-carousel owl-1">
-          <!-- Row 1 Tab 1-->
-          <div class="tab1">
-            <div class="media-29101 d-md-flex w-100">
-              <div class="img">
-                <img
-                  src="images/weekly-activities/discussion4.jpeg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <a class="category d-block mb-4" href="#">28th Feb 2022</a>
-                <h2>
-                  <a href="https://pubmed.ncbi.nlm.nih.gov/24079729/"
-                    >A Simple Approach to Lifetime Learning in Genetic
-                    Programming-Based Symbolic Regression</a
-                  >
-                </h2>
-              </div>
-            </div>
-            <!-- .item -->
-            <div class="media-29101 d-md-flex w-100">
-              <div class="img">
-                <img
-                  src="images/weekly-activities/discussion3.jpeg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <a class="category d-block mb-4" href="#">21st Feb 2022</a>
-                <h2>
-                  <a href="https://ieeexplore.ieee.org/document/5499431"
-                    >Modeling Financial time Series using Grammatical Swarm</a
-                  >
-                </h2>
-              </div>
-            </div>
-            <!-- .item -->
-
-            <div class="media-29101 d-md-flex w-100">
-              <div class="img">
-                <img
-                  src="images/weekly-activities/discussion2.jpeg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <a class="category d-block mb-4" href="#">14th Feb 2022</a>
-                <h2>
-                  <a href="https://www.mdpi.com/1424-8220/18/4/1288"
-                    >Evolutionary Design of Convolutional Neural Networks for
-                    Human Activity Recognition in Sensor-Rich Environments</a
-                  >
-                </h2>
-              </div>
-            </div>
-            <!-- .item -->
-            <div class="media-29101 d-md-flex w-100">
-              <div class="img">
-                <img
-                  src="images/weekly-activities/picture1.jpg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <a class="category d-block mb-4" href="#">7th February, 2022</a>
-                <h2>
-                  <a
-                    href="https://www.blogs.uni-mainz.de/fb03-wi-isym/files/2020/01/evocop2006.pdf"
-                    >On the Locality of Grammatical Evolution</a
-                  >
-                </h2>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-
-          <!-- Row 1 Tab 2-->
-          <div class="tab2">
-            <div class="to-right">
-              <a href="workshopForm.html">
-                <button id="submit-btn">Add new workshop</button>
-              </a>
-            </div>
-            <div id="data"></div>
-            <!-- .item -->
-          </div>
-        </div>
+        <form class="formbox" id="workshopForm">
+          <span class="error"> Something went wrong!!!</span>
+          <span class="success"> Workshop Details Added Successfully!!!</span>
+          <span class="info"> Uploading Image...</span>
+          <label for="name">Name of Workshop</label>
+          <input type="text" id="name" name="name" />
+          <label for="date">Date of Workshop</label>
+          <input type="date" name="date" id="date" />
+          <label for="author">Will be Conducted by</label>
+          <input type="text" id="author" name="author" />
+          <label for="poster">Poster of Workshop</label>
+          <input type="file" name="poster" id="image" accept="image/*" />
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
       </div>
     </div>
 
     <!-- Footer -->
     <div id="footer-main"></div>
 
-    <!-- Firebase SDK -->
+    <!-- Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="/js/firebaseread.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script type="module" src="/js/firebase.js"></script>
+    <script src="/js/workshop.js"></script>
 
     <!-- Bootstrap JQuery Popper scripts -->
     <script
