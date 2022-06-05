@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.formbox-news {
+  height: fit-content;
+}
+
 .error {
   margin-bottom: 10px;
   text-align: center;

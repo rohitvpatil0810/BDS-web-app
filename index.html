@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/navstyle.css">
+  <link rel="stylesheet" href="css-external/newsMarquee.css">
   <style>
     .carousel-item {
       max-height: 79vh;
@@ -37,6 +38,7 @@
       min-height: 40vh;
     }
     /*For Nav Sub Mene// Caution*/
+
   </style>
 </head>
 <body>
@@ -90,8 +92,17 @@
     </a>
   </div>
 
-
-  <section class="coloured-section" id="mid-section-1">
+<!-- News Marquee Section -->
+<div class="news-section">
+  <div class="news-bar">
+    <h5 class="news-heading">News Flash: </h5>
+    <a href="/newsForm.html"><button class="btn">Add New News</button></a>
+  </div>
+    <marquee class="marquee" onmouseenter="stop();" onmouseleave="start();" id="marquee">
+     
+    </marquee>
+</div>
+<section class="coloured-section" id="mid-section-1">
     <div class="container mid-section">
 
       <!-- Title -->
@@ -173,6 +184,13 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <!-- Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- external marquee script -->
+  <script src="js-external/newsMarquee.js"></script>
 
 <!-- PAGE LEVEL SCRIPTS -->
     <!-- FontAwsome JS -->  
