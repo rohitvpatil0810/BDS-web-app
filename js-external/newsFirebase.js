@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
         setTimeout(() => {
           document.getElementById("submit-btn").innerText = "Submit";
           document.querySelector("#submit-btn").disabled = false;
-          window.location.href = "/index.html";
+          window.location.href = "index.html";
         }, 1500);
       })
       .catch((error) => {
